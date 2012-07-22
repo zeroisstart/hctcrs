@@ -20,7 +20,7 @@ class ClientScript extends CClientScript {
      * @param boolean $defaultPreUrl
      */
     public function _registerCSS(array $ary_css, $defaultPreUrl = true) {
-        $pre = $defaultUrl ? Yii::app ()->baseUrl : '';
+        $pre = $defaultPreUrl ? Yii::app ()->baseUrl : '';
         foreach ( $ary_css as $css ) {
             $this->registerScriptFile ( $pre . '/' . $css );
         }
