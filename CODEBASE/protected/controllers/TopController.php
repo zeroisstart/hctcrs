@@ -1,7 +1,7 @@
 <?php
 
 class TopController extends Controller {
-    
+
     /**
      * 显示代码导航
      */
@@ -16,9 +16,18 @@ class TopController extends Controller {
                 $search = $_REQUEST [$key];
         }
         if ($search) {
-            
+
         }
         $this->render ( 'index' );
+    }
+
+    public function actionRunCode() {
+        $content = isset($_POST['code'])?$_POST['code']:'';
+        if($content){
+            $code = $content;
+            //eval($code);
+        }
+        $this->render ( 'runCode' ,array('code'=>$content));
     }
 
 }

@@ -18,6 +18,12 @@ zis
 	Data Hctcrs
 	App  Athena
 	Doc  Athos
+	Pic  Anne
+	
+tool 实现的目的 :便捷,应用,实现速度
 	
 	
-cache golbal clean 
+	
+
+	
+cache golbal clean  apache.restart
