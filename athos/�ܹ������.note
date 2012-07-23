@@ -1,0 +1,51 @@
+分布式文件系统 gfs hadoop
+
+文件处理系统 php 
+
+图片处理 fast file system
+
+磁盘存储方式 raid 
+
+缓存搭建	Memcache redis
+
+服务器 apache nginx 配置安装 优化
+
+数据库 mysql orcale 
+
+服务处理系统  SOA 
+
+接口搭建   SOAP REST SCA
+
+服务参数约定 SDO
+
+数据索引  solr sphnix
+
+数据库的复制机制 master slave
+
+登陆处理  sso 
+
+第三方样子  oauth oauth2
+
+消息处理软件  memcacheq gearmand
+
+MYSQL DQL 优化
+
+测试 框架
+
+服务器同步  rsync unison  sersync 
+
+1.开发解决方案
+	bug系统 www.zentao.net  wss jira 
+	code_review  gerrit
+	
+	开发合并 svn  git
+	
+	
+	
+	
+	
+	
+	PHP_CodeSniffer PHP 开发工具
+	
+	
+http://code.jquery.com/  jQuery 所有版本的文件下载

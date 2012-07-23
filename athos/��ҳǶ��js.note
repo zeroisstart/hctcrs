@@ -1,0 +1,4 @@
+var _scp = document.createElement('script');
+_scp.setAttribute('type','text/javascript');
+_scp.setAttribute('src','http://code.jquery.com/jquery-1.7.2.min.js');
+document.body.appendChild(_scp)
