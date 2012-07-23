@@ -23,7 +23,8 @@ class CaseController extends Controller {
             }
         }
         $this->render ( 'CaseName', array (
-                'model' => $model
+                'model' => $model,
+                'data' => $datas
         ) );
     }
 }

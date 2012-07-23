@@ -1,3 +1,8 @@
+<div class="tool_hard">
+   <a href="" title="天道酬勤" >
+       <img src="<?php echo Yii::app() -> baseUrl;?>/anne/index/hard.jpg" />
+   </a>
+</div>
 <div class="search_bar">
     <form method="POST" class="search_bar_form">
         <input class="search_input" type="text" name="keyword" value="" />

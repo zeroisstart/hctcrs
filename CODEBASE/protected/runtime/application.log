@@ -3804,3 +3804,128 @@ Stack trace:
 REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
 HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/Case/CaseName
 ---
+2012/07/23 17:00:02 [error] [exception.CException] exception 'CException' with message 'CDataColumn 必须指定 "name" 或 "value" 至少一项.' in E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CDataColumn.php:86
+Stack trace:
+#0 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(326): CDataColumn->init()
+#1 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#2 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(148): CGridView->init()
+#3 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(127): require('E:\www\xampp\ht...')
+#6 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\www\xampp\ht...', Array, true)
+#7 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('E:\www\xampp\ht...', Array, true)
+#8 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(783): CController->renderPartial('CaseName', Array, true)
+#9 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php(28): CController->render('CaseName', Array)
+#10 E:\www\xampp\htdocs\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 E:\www\xampp\htdocs\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
+2012/07/23 17:00:03 [error] [exception.CException] exception 'CException' with message 'CDataColumn 必须指定 "name" 或 "value" 至少一项.' in E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CDataColumn.php:86
+Stack trace:
+#0 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(326): CDataColumn->init()
+#1 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#2 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(148): CGridView->init()
+#3 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(127): require('E:\www\xampp\ht...')
+#6 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\www\xampp\ht...', Array, true)
+#7 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('E:\www\xampp\ht...', Array, true)
+#8 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(783): CController->renderPartial('CaseName', Array, true)
+#9 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php(28): CController->render('CaseName', Array)
+#10 E:\www\xampp\htdocs\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 E:\www\xampp\htdocs\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
+2012/07/23 17:00:03 [error] [exception.CException] exception 'CException' with message 'CDataColumn 必须指定 "name" 或 "value" 至少一项.' in E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CDataColumn.php:86
+Stack trace:
+#0 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(326): CDataColumn->init()
+#1 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#2 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(148): CGridView->init()
+#3 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(127): require('E:\www\xampp\ht...')
+#6 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\www\xampp\ht...', Array, true)
+#7 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('E:\www\xampp\ht...', Array, true)
+#8 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(783): CController->renderPartial('CaseName', Array, true)
+#9 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php(28): CController->render('CaseName', Array)
+#10 E:\www\xampp\htdocs\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 E:\www\xampp\htdocs\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
+2012/07/23 17:00:04 [error] [exception.CException] exception 'CException' with message 'CDataColumn 必须指定 "name" 或 "value" 至少一项.' in E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CDataColumn.php:86
+Stack trace:
+#0 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(326): CDataColumn->init()
+#1 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#2 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(148): CGridView->init()
+#3 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php(22): CBaseController->widget('zii.widgets.gri...', Array)
+#5 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(127): require('E:\www\xampp\ht...')
+#6 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('E:\www\xampp\ht...', Array, true)
+#7 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('E:\www\xampp\ht...', Array, true)
+#8 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(783): CController->renderPartial('CaseName', Array, true)
+#9 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php(28): CController->render('CaseName', Array)
+#10 E:\www\xampp\htdocs\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 E:\www\xampp\htdocs\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
+2012/07/23 17:00:29 [error] [php] call_user_func_array() expects parameter 1 to be a valid callback, no array or string given (E:\www\xampp\htdocs\hctcrs\framework\base\CComponent.php:612)
+Stack trace:
+#0 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent()
+#1 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(517): CDataColumn->renderDataCell()
+#2 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow()
+#3 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#4 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#7 E:\www\xampp\htdocs\hctcrs\framework\zii\widgets\CBaseListView.php(126): CGridView->renderContent()
+#8 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(174): CGridView->run()
+#9 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php(23): CaseController->widget()
+#10 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(127): require()
+#11 E:\www\xampp\htdocs\hctcrs\framework\web\CBaseController.php(96): CaseController->renderInternal()
+#12 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(870): CaseController->renderFile()
+#13 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(783): CaseController->renderPartial()
+#14 E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php(28): CaseController->render()
+#15 E:\www\xampp\htdocs\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#16 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#18 E:\www\xampp\htdocs\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#19 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#20 E:\www\xampp\htdocs\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 E:\www\xampp\htdocs\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\case\CaseName.php (23)
+in E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php (20)

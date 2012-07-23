@@ -29,7 +29,7 @@
 /* start search_bar  */
 .search_bar {
 	text-align: center;
-	margin-top: 150px;
+	margin-top: 15px;
 	padding: 0px;
 }
 
@@ -41,10 +41,10 @@
 	width: 50%;
 	height: 28px;
 	font-size: 16px;
-    line-height:16px;
+	line-height: 16px;
 	margin: 0px;
 	padding: 0px;
-    padding-left: 5px;
+	padding-left: 5px;
 	background: none;
 	border: 1px solid #e7e7e7;
 }
@@ -65,3 +65,11 @@
 	border: 1px solid #4D90FE;
 }
 /* end search_bar */
+.tool_hard {
+	height:90px;
+	text-align: center;
+}
+
+.tool_hard img {
+	width: 300px;
+}

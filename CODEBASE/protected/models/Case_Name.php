@@ -100,19 +100,23 @@ class Case_Name extends CActiveRecord {
      * @return boolean
      */
     public function _unique($attribute) {
-        $Name = $this -> {$attribute};
-        if($this -> exists('Name=:name',array(':name'=>$Name))){
-            $message = $Name.' 已经存在';
-            $this->addError($attribute,Yii::t('basic', '{message}', array('{message}' => $message)));
+        $Name = $this->{$attribute};
+        if ($this->exists ( 'Name=:name', array (
+                ':name' => $Name
+        ) )) {
+            $message = $Name . ' 已经存在';
+            $this->addError ( $attribute, Yii::t ( 'basic', '{message}', array (
+                    '{message}' => $message
+            ) ) );
             return false;
         }
     }
     /**
      * 设置名称添加的时间
      */
-/*     public function beforeSave() {
-        //$this->Dateline = time ();
-    } */
+    /*
+     * public function beforeSave() { //$this->Dateline = time (); }
+     */
     /**
      * 设置名称修改的时间
      */
@@ -120,6 +124,11 @@ class Case_Name extends CActiveRecord {
         $this->Dateline = time ();
     }
  */
+
+    protected function afterFind() {
+        $this->Dateline = date ( 'Y-m-d h:i:s', $this->Dateline );
+    }
+
     /**
      *
      * @return array customized attribute labels (name=>label)
