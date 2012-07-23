@@ -22,12 +22,37 @@ class TopController extends Controller {
     }
 
     public function actionRunCode() {
-        $content = isset($_POST['code'])?$_POST['code']:'';
-        if($content){
+        $string = 'this is test';
+        $int = 100;
+        $sary = array (
+                'a',
+                'b',
+                'c'
+        );
+        $saryr = array (
+                'c',
+                'b',
+                'a'
+        );
+        $iary = array (
+                1,
+                2,
+                3
+        );
+        $iaryr = array (
+                3,
+                2,
+                1
+        );
+        $content = isset ( $_POST ['code'] ) ? $_POST ['code'] : '';
+        if ($content) {
             $code = $content;
-            //eval($code);
+            eval ( $code );
+            //highlight_string($int);
         }
-        $this->render ( 'runCode' ,array('code'=>$content));
+        $this->render ( 'runCode', array (
+                'code' => $content
+        ) );
     }
 
 }
