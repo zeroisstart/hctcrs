@@ -19,9 +19,10 @@ class CaseController extends Controller {
                 $model->save ();
                 $model->attributes = array ();
             } else {
-                // var_dump ( $model->errors );
+               var_dump ( $model->errors );
             }
         }
+        $datas = Case_Name::model()->findAll();
         $this->render ( 'CaseName', array (
                 'model' => $model,
                 'data' => $datas

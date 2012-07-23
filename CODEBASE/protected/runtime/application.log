@@ -4133,3 +4133,129 @@ REQUEST_URI=/hctcrs/CODEBASE/index.php/Top/RunCode
 in E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\views\top\runCode.php (11)
 in E:\www\xampp\htdocs\hctcrs\CODEBASE\protected\controllers\TopController.php (25)
 in E:\www\xampp\htdocs\hctcrs\CODEBASE\index.php (20)
+2012/07/23 22:45:19 [error] [php] Undefined variable: coding (D:\wamp\www\hctcrs\CODEBASE\protected\views\string\codingSelect.php:13)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(870): StringController->renderFile()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(783): StringController->renderPartial()
+#2 D:\wamp\www\hctcrs\CODEBASE\protected\controllers\StringController.php(7): StringController->render()
+#3 D:\wamp\www\hctcrs\framework\web\actions\CInlineAction.php(50): StringController->actionCodingSelect()
+#4 D:\wamp\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#6 D:\wamp\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#7 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#8 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/String/CodingSelect
+in D:\wamp\www\hctcrs\CODEBASE\protected\views\string\codingSelect.php (13)
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\StringController.php (7)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 22:45:51 [error] [php] Undefined variable: coding (D:\wamp\www\hctcrs\CODEBASE\protected\views\string\codingSelect.php:13)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(870): StringController->renderFile()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(783): StringController->renderPartial()
+#2 D:\wamp\www\hctcrs\CODEBASE\protected\controllers\StringController.php(8): StringController->render()
+#3 D:\wamp\www\hctcrs\framework\web\actions\CInlineAction.php(50): StringController->actionCodingSelect()
+#4 D:\wamp\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#6 D:\wamp\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#7 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#8 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/String/CodingSelect
+in D:\wamp\www\hctcrs\CODEBASE\protected\views\string\codingSelect.php (13)
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\StringController.php (8)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:06:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'codebase.case_name' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `Case_Name`.
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (14)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:06:39 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "Case_Name" 对应的 table "Case_Name".' in D:\wamp\www\hctcrs\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Case_Name))
+#1 D:\wamp\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Case_Name')
+#2 D:\wamp\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php(14): CActiveRecord->__construct('create')
+#4 D:\wamp\www\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#5 D:\wamp\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#9 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#10 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#12 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
+2012/07/23 23:08:44 [error] [php] Undefined variable: datas (D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php:28)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#2 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#3 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:08:45 [error] [php] Undefined variable: datas (D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php:28)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#2 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#3 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:08:46 [error] [php] Undefined variable: datas (D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php:28)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#2 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#3 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:08:46 [error] [php] Undefined variable: datas (D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php:28)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#2 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#3 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:08:46 [error] [php] Undefined variable: datas (D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php:28)
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(287): CaseController->runAction()
+#1 D:\wamp\www\hctcrs\framework\web\CController.php(266): CaseController->runActionWithFilters()
+#2 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CaseController->run()
+#3 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Case/CaseName
+in D:\wamp\www\hctcrs\CODEBASE\protected\controllers\CaseController.php (28)
+in D:\wamp\www\hctcrs\CODEBASE\index.php (20)
+2012/07/23 23:11:55 [error] [exception.CException] exception 'CException' with message 'TopController 无法找到请求的视图 "runCode".' in D:\wamp\www\hctcrs\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('runCode', Array, true)
+#1 D:\wamp\www\hctcrs\CODEBASE\protected\controllers\TopController.php(55): CController->render('runCode', Array)
+#2 D:\wamp\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionRunCode()
+#3 D:\wamp\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('RunCode')
+#7 D:\wamp\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Top/RunCode')
+#8 D:\wamp\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/hctcrs/CODEBASE/index.php/Top/RunCode
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/index.php/
+---
