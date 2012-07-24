@@ -21,35 +21,26 @@ class TopController extends Controller {
         $this->render ( 'index' );
     }
 
+    /**
+     * 执行传递的PHP代码
+     */
     public function actionRunCode() {
-        $string = 'this is test';
-        $int = 100;
-        $sary = array (
-                'a',
-                'b',
-                'c'
-        );
-        $saryr = array (
-                'c',
-                'b',
-                'a'
-        );
-        $iary = array (
-                1,
-                2,
-                3
-        );
-        $iaryr = array (
-                3,
-                2,
-                1
-        );
-        $content = isset ( $_POST ['code'] ) ? $_POST ['code'] : '';
-        if ($content) {
+
+/*         $code = '<?php ';
+        $code .= $string;
+        $code .= $int;
+        $code .= $sary;
+        $code .= $saryr;
+        $code .= $iary;
+        $code .= $iaryr;
+        highlight_string($code);
+ */
+        $content = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
+/*         if ($content) {
             $code = $content;
             eval ( $code );
-            //highlight_string($int);
-        }
+            // highlight_string($int);
+        } */
         $this->render ( 'runCode', array (
                 'code' => $content
         ) );
