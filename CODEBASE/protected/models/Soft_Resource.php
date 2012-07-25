@@ -1,16 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "top_softresource".
+ * This is the model class for table "soft_resource".
  *
- * The followings are the available columns in table 'top_softresource':
+ * The followings are the available columns in table 'soft_resource':
  * @property integer $ID
- * @property double $Version
+ * @property string $Name
+ * @property integer $Size
+ * @property string $Version
  * @property integer $Type_ID
  * @property string $PATH_CG
+ * @property integer $Dateline
  *
  * The followings are the available model relations:
- * @property TopSofttype $type
+ * @property SoftType $type
  */
 class Soft_Resource extends CActiveRecord {
     /**
@@ -23,15 +26,15 @@ class Soft_Resource extends CActiveRecord {
     public static function model($className = __CLASS__) {
         return parent::model ( $className );
     }
-    
+
     /**
      *
      * @return string the associated database table name
      */
     public function tableName() {
-        return 'Soft_Resource';
+        return 'soft_resource';
     }
-    
+
     /**
      *
      * @return array validation rules for model attributes.
@@ -41,34 +44,39 @@ class Soft_Resource extends CActiveRecord {
         // will receive user inputs.
         return array (
                 array (
-                        'Version, Type_ID',
+                        'Name, Size, Version, Type_ID, Dateline',
                         'required'
                 ),
                 array (
-                        'Type_ID',
+                        'Size, Type_ID, Dateline',
                         'numerical',
                         'integerOnly' => true
                 ),
                 array (
+                        'Name',
+                        'length',
+                        'max' => 200
+                ),
+                array (
                         'Version',
-                        'numerical'
+                        'length',
+                        'max' => 100
                 ),
                 array (
                         'PATH_CG',
                         'length',
                         'max' => 255
                 ),
-                //array('PATH_CG','file'),
                 // The following rule is used by search().
                 // Please remove those attributes that should not be searched.
                 array (
-                        'ID, Version, Type_ID, PATH_CG',
+                        'ID, Name, Size, Version, Type_ID, PATH_CG, Dateline',
                         'safe',
                         'on' => 'search'
                 )
         );
     }
-    
+
     /**
      *
      * @return array relational rules.
@@ -79,12 +87,12 @@ class Soft_Resource extends CActiveRecord {
         return array (
                 'type' => array (
                         self::BELONGS_TO,
-                        'TopSofttype',
+                        'SoftType',
                         'Type_ID'
                 )
         );
     }
-    
+
     /**
      *
      * @return array customized attribute labels (name=>label)
@@ -92,12 +100,18 @@ class Soft_Resource extends CActiveRecord {
     public function attributeLabels() {
         return array (
                 'ID' => 'ID',
+                'Name' => 'Name',
+                'Size' => 'Size',
                 'Version' => 'Version',
+                'Type_ID' => 'Type',
+                'PATH_CG' => 'Path Cg',
+                'Dateline' => 'Dateline',
+                'Version' => '版本',
                 'Type_ID' => '资源类型',
                 'PATH_CG' => '资源上传'
         );
     }
-    
+
     /**
      * Retrieves a list of models based on the current search/filter conditions.
      *
@@ -107,21 +121,25 @@ class Soft_Resource extends CActiveRecord {
     public function search() {
         // Warning: Please modify the following code to remove attributes that
         // should not be searched.
-        
+
         $criteria = new CDbCriteria ();
-        
+
         $criteria->compare ( 'ID', $this->ID );
-        $criteria->compare ( 'Version', $this->Version );
+        $criteria->compare ( 'Name', $this->Name, true );
+        $criteria->compare ( 'Size', $this->Size );
+        $criteria->compare ( 'Version', $this->Version, true );
         $criteria->compare ( 'Type_ID', $this->Type_ID );
         $criteria->compare ( 'PATH_CG', $this->PATH_CG, true );
-        
+        $criteria->compare ( 'Dateline', $this->Dateline );
+
         return new CActiveDataProvider ( $this, array (
                 'criteria' => $criteria
         ) );
     }
+
     /**
      *
-     * @param unknown_type $name
+     * @param string $name
      */
     public function getTypes($name = '') {
         $types = Soft_Type::model ();
