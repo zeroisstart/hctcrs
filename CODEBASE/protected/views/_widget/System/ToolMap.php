@@ -1,6 +1,6 @@
 <div class="tool_hard">
    <a href="" title="天道酬勤" >
-       <img src="<?php echo Yii::app() -> baseUrl;?>/anne/index/hard.jpg" />
+       <img src="<?php echo Yii::app() -> baseUrl;?>/publish/anne/hard.jpg" />
    </a>
 </div>
 <div class="search_bar">
