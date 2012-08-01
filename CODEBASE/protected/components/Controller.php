@@ -20,4 +20,21 @@ class Controller extends CController
 	 * for more details on how to specify this property.
 	 */
 	public $breadcrumbs=array();
+
+
+    /**
+     * 运行渲染组件
+     * @param string $helpWidgetName
+     * @param array $args
+     * @DS
+     */
+    public function helper($helperWidgetName,array $args,$captureOutput = true){
+
+        $helperWidgetPath = '';
+
+        $widgetName  ='';
+
+        return $this -> widget($widgetName,$args,$captureOutput);
+
+    }
 }
