@@ -26,21 +26,17 @@ class TopController extends Controller {
      */
     public function actionRunCode() {
 
-/*         $code = '<?php ';
-        $code .= $string;
-        $code .= $int;
-        $code .= $sary;
-        $code .= $saryr;
-        $code .= $iary;
-        $code .= $iaryr;
-        highlight_string($code);
- */
+        /*         $code = '<?php/*
+         * $code = '<?php '; $code .= $string; $code .= $int; $code .= $sary;
+         * $code .= $saryr; $code .= $iary; $code .= $iaryr;
+         * highlight_string($code);
+         */
+
         $content = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
-/*         if ($content) {
-            $code = $content;
-            eval ( $code );
-            // highlight_string($int);
-        } */
+        /*
+         * if ($content) { $code = $content; eval ( $code ); //
+         * highlight_string($int); }
+         */
         $this->render ( 'runCode', array (
                 'code' => $content
         ) );

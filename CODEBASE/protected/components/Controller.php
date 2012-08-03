@@ -3,38 +3,50 @@
  * Controller is the customized base controller class.
  * All controller classes for this application should extend from this base class.
  */
-class Controller extends CController
-{
-	/**
-	 * @var string the default layout for the controller view. Defaults to '//layouts/column1',
-	 * meaning using a single column layout. See 'protected/views/layouts/column1.php'.
-	 */
-	public $layout='//layouts/column1';
-	/**
-	 * @var array context menu items. This property will be assigned to {@link CMenu::items}.
-	 */
-	public $menu=array();
-	/**
-	 * @var array the breadcrumbs of the current page. The value of this property will
-	 * be assigned to {@link CBreadcrumbs::links}. Please refer to {@link CBreadcrumbs::links}
-	 * for more details on how to specify this property.
-	 */
-	public $breadcrumbs=array();
+class Controller extends CController {
+    /**
+     *
+     * @var string the default layout for the controller view. Defaults to
+     *      '//layouts/column1',
+     *      meaning using a single column layout. See
+     *      'protected/views/layouts/column1.php'.
+     */
+    public $layout = '//layouts/column1';
+    /**
+     *
+     * @var array context menu items. This property will be assigned to {@link
+     *      CMenu::items}.
+     */
+    public $menu = array ();
 
+    public $widgetPath = 'application.widgets';
+    /**
+     *
+     * @var array the breadcrumbs of the current page. The value of this
+     *      property will
+     *      be assigned to {@link CBreadcrumbs::links}. Please refer to {@link
+     *      CBreadcrumbs::links}
+     *      for more details on how to specify this property.
+     */
+    public $breadcrumbs = array ();
 
     /**
      * 运行渲染组件
-     * @param string $helpWidgetName
-     * @param array $args
-     * @DS
+     *
+     * @param $helpWidgetName 组件名称
+     * @param $args 组件参数
+     * @param $captureOutput 是否返回输出内容
+     * @return mixed
      */
-    public function helper($helperWidgetName,array $args,$captureOutput = true){
-
-        $helperWidgetPath = '';
-
-        $widgetName  ='';
-
-        return $this -> widget($widgetName,$args,$captureOutput);
+    public function helper($helperWidgetName, array $args, $captureOutput = true) {
+        $widgetName = '';
+        $helperWidgetPath = $this->widgetPath . '.' . $helperWidgetName;
+        if (Yii::getPathOfAlias ( $helperWidgetName )) {
+            $widgetName = $helperWidgetName;
+        } elseif (Yii::app ()->getPathOfAlias ( $helperWidgetPath )) {
+            $widgetName = $helperWidgetPath;
+        }
+        return $widgetName ? $this->widget ( $widgetName, $args, $captureOutput ) : false;
 
     }
 }

@@ -10,7 +10,7 @@ return array(
 	'name'=>'Top\' CodeBase ',
     'timeZone'=>'Asia/Shanghai', //设置时区为上海
     'language'=>'zh_cn',
-        
+
     'defaultController'=>'Top',
 
 	// preloading 'log' component
@@ -23,6 +23,8 @@ return array(
 	    'application.components.Helper.*',
 	),
     'aliases'=>array(
+      'anne' =>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR,
+      'alice' =>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR,
       'components'=>'application.components', // 设置元件目录
       'views'=>'application.views',           // 设置显示目录
       'widgets'=>'application.widgets'),      // 设置小工具目录
@@ -43,11 +45,11 @@ return array(
 		),
 		'Folder'=>array(
                 'class'=>'components.System.Folder'
-		        
+
 		),
 		'clientScript'=>array(
 		        'class'=>'components.System.ClientScript'
-		
+
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
@@ -85,7 +87,7 @@ return array(
 			),
 		),
 	),
-	
+
 
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
