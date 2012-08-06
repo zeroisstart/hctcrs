@@ -14,18 +14,16 @@ Interface 总调试 (rest,soap)
 
 
 zis
-	SOA  Ares
-	Data Hctcrs
-	App  Athena
-	Doc  Athos
-	Pic  Anne
+	SOA  Ares   SOA 全局服务应用包
+	Data Hctcrs 数据管理包
+	App  Athena 应用管理包
+	Doc  Athos 文档管理包
+	Pic  Anne 图片发布包
+	Relation   Hermes 关联引用 关系处理 contact
     前端模板机制   Poker 伪模板提供前端和后端数据交互 (develop)
 	
 	
 tool 实现的目的 :便捷,应用,实现速度
 	
-	
-	
-
-	
+		
 cache golbal clean  apache.restart

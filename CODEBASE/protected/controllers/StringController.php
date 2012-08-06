@@ -2,21 +2,22 @@
 
 class StringController extends Controller {
     public function actionCodingSelect() {
-        var_dump($this);
-        die;
-        $coding = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
-        if ($coding) {
-            $encode = mb_detect_encoding ( $coding, array (
+        $txt = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
+        $char_code;
+        if ($txt) {
+            $encode = mb_detect_encoding ( $txt, array (
                     'ASCII',
                     'GB2312',
                     'GBK',
                     'UTF-8'
             ) );
-            var_dump($encode);
-            $test = '中文';
+            $convert_data = mb_convert_encoding($txt, $encode,'utf-8') ;
+            $char_code = $encode;
         }
         $this->render ( 'codingSelect', array (
-                'coding' => $coding
+                'txt' => $txt,
+                'convert_data'=>$convert_data,
+                'reponse_data' =>$char_code
         ) );
     }
     /**

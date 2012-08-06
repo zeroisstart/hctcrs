@@ -1,0 +1,25 @@
+ 1. 注释 
+	模型实现
+	$modules 模块名称 
+	$services 具体服务名称 初始化节点 
+			   $services  
+						-update,
+						-delete,
+						-insert,
+						-select						
+	$modules.$services //获取根服务
+	$modules.$services.insert//获取具体服务
+	$modules.$services.insert//参数传递
+	$modules.$services.insert,array()
+	$modules.$services.insert//{name:test} //数据
+	
+	
+	//主库
+	system.global.$actions  //系统全局操作
+		  .syntax.$actions  //解析规则
+	system.auth.$actions    //系统权限访问验证
+	systen.safe.$actions    //系统的安全过滤
+	system.load	
+	system.config
+	
+	//hctcrs 主数据
