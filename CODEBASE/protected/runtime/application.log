@@ -4422,3 +4422,24 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/hctcrs/CODEBASE/index.php/
 ---
+2012/11/10 12:04:56 [error] [exception.CException] exception 'CException' with message 'EncryptionController and its behaviors do not have a method or closure named "activeForm".' in /private/var/www/hctcrs/framework/base/CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('activeForm', Array)
+#1 /private/var/www/hctcrs/CODEBASE/protected/views/encryption/md5.php(8): EncryptionController->activeForm()
+#2 /private/var/www/hctcrs/framework/web/CBaseController.php(127): require('/private/var/ww...')
+#3 /private/var/www/hctcrs/framework/web/CBaseController.php(96): CBaseController->renderInternal('/private/var/ww...', NULL, true)
+#4 /private/var/www/hctcrs/framework/web/CController.php(870): CBaseController->renderFile('/private/var/ww...', NULL, true)
+#5 /private/var/www/hctcrs/framework/web/CController.php(783): CController->renderPartial('md5', NULL, true)
+#6 /private/var/www/hctcrs/CODEBASE/protected/controllers/EncryptionController.php(8): CController->render('md5')
+#7 /private/var/www/hctcrs/framework/web/actions/CInlineAction.php(50): EncryptionController->actionmd5()
+#8 /private/var/www/hctcrs/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /private/var/www/hctcrs/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /private/var/www/hctcrs/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /private/var/www/hctcrs/framework/web/CWebApplication.php(276): CController->run('md5')
+#12 /private/var/www/hctcrs/framework/web/CWebApplication.php(135): CWebApplication->runController('Encryption/md5')
+#13 /private/var/www/hctcrs/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /private/var/www/hctcrs/CODEBASE/index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/codebase/index.php/Encryption/md5
+HTTP_REFERER=http://localhost/codebase/index.php
+---

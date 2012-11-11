@@ -23,6 +23,8 @@ class CaseController extends Controller {
             }
         }
         $datas = Case_Name::model ()->findAll ();
+//         var_dump($datas);
+//         die;
         $this->render ( 'CaseName', array (
                 'model' => $model,
                 'data' => $datas
