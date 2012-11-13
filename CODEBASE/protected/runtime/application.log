@@ -4443,3 +4443,51 @@ Stack trace:
 REQUEST_URI=/codebase/index.php/Encryption/md5
 HTTP_REFERER=http://localhost/codebase/index.php
 ---
+2012/11/13 22:19:51 [error] [exception.CException] exception 'CException' with message 'EncryptionController 无法找到请求的视图 "_helper/Form/areaSubmit".' in /cde/www/hctcrs/framework/web/CController.php:879
+Stack trace:
+#0 /cde/www/hctcrs/framework/web/CController.php(783): CController->renderPartial('_helper/Form/ar...', NULL, true)
+#1 /cde/www/hctcrs/CODEBASE/protected/views/encryption/md5.php(8): CController->render('_helper/Form/ar...')
+#2 /cde/www/hctcrs/framework/web/CBaseController.php(127): require('/cde/www/hctcrs...')
+#3 /cde/www/hctcrs/framework/web/CBaseController.php(96): CBaseController->renderInternal('/cde/www/hctcrs...', NULL, true)
+#4 /cde/www/hctcrs/framework/web/CController.php(870): CBaseController->renderFile('/cde/www/hctcrs...', NULL, true)
+#5 /cde/www/hctcrs/framework/web/CController.php(783): CController->renderPartial('md5', NULL, true)
+#6 /cde/www/hctcrs/CODEBASE/protected/controllers/EncryptionController.php(8): CController->render('md5')
+#7 /cde/www/hctcrs/framework/web/actions/CInlineAction.php(50): EncryptionController->actionmd5()
+#8 /cde/www/hctcrs/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /cde/www/hctcrs/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /cde/www/hctcrs/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /cde/www/hctcrs/framework/web/CWebApplication.php(276): CController->run('md5')
+#12 /cde/www/hctcrs/framework/web/CWebApplication.php(135): CWebApplication->runController('Encryption/md5')
+#13 /cde/www/hctcrs/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /cde/www/hctcrs/CODEBASE/index.php(20): CApplication->run()
+#15 {main}
+REQUEST_URI=/codebase/Encryption/md5
+HTTP_REFERER=http://localhost/codebase/
+---
+2012/11/13 23:11:20 [error] [php] include(Y���ii.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/cde/www/hctcrs/framework/YiiBase.php:418)
+Stack trace:
+#0 /cde/www/hctcrs/CODEBASE/protected/views/layouts/main.php(12): spl_autoload_call()
+#1 /cde/www/hctcrs/framework/web/CBaseController.php(127): require()
+#2 /cde/www/hctcrs/framework/web/CBaseController.php(96): TopController->renderInternal()
+#3 /cde/www/hctcrs/framework/web/widgets/CContentDecorator.php(77): TopController->renderFile()
+#4 /cde/www/hctcrs/framework/web/widgets/CContentDecorator.php(55): CContentDecorator->decorate()
+#5 /cde/www/hctcrs/framework/web/widgets/COutputProcessor.php(45): CContentDecorator->processOutput()
+#6 /cde/www/hctcrs/framework/web/CBaseController.php(207): CContentDecorator->run()
+#7 /cde/www/hctcrs/framework/web/CBaseController.php(301): TopController->endWidget()
+#8 /cde/www/hctcrs/CODEBASE/protected/views/layouts/column1.php(5): TopController->endContent()
+#9 /cde/www/hctcrs/framework/web/CBaseController.php(127): require()
+#10 /cde/www/hctcrs/framework/web/CBaseController.php(96): TopController->renderInternal()
+#11 /cde/www/hctcrs/framework/web/CController.php(785): TopController->renderFile()
+#12 /cde/www/hctcrs/CODEBASE/protected/controllers/TopController.php(21): TopController->render()
+#13 /cde/www/hctcrs/framework/web/actions/CInlineAction.php(50): TopController->actionIndex()
+#14 /cde/www/hctcrs/framework/web/CController.php(309): CInlineAction->runWithParams()
+#15 /cde/www/hctcrs/framework/web/CController.php(287): TopController->runAction()
+#16 /cde/www/hctcrs/framework/web/CController.php(266): TopController->runActionWithFilters()
+#17 /cde/www/hctcrs/framework/web/CWebApplication.php(276): TopController->run()
+#18 /cde/www/hctcrs/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#19 /cde/www/hctcrs/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /cde/www/hctcrs/CODEBASE/index.php(20): CWebApplication->run()
+REQUEST_URI=/codebase/
+in /cde/www/hctcrs/CODEBASE/protected/views/layouts/main.php (12)
+in /cde/www/hctcrs/CODEBASE/protected/views/layouts/column1.php (5)
+in /cde/www/hctcrs/CODEBASE/protected/controllers/TopController.php (21)

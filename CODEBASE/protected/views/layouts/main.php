@@ -11,9 +11,26 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-    	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/top.css" />
+	<?php 
+		$css = array(
+				'/css/main.css',
+				'/css/form.css',
+				'/css/top.css');
+
+		foreach ($css as $cssfile) {
+			echo '<link rel="stylesheet" type="text/css" href="'.Yii::app() -> request->baseUrl.$cssfile.'"/>'."\r\n\t";
+		}
+
+		$js = array();
+
+		foreach ($js as $jsfile) {
+			echo '<link rel="stylesheet" type="text/css" href="'.Yii::app() -> request->baseUrl.$cssfile.'"/>'."\r\n\t";
+		}
+
+	?>
+
+
+    
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -41,7 +58,7 @@
 	<div class="clear"></div>
 
 	<div id="footer" style="display:display;">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Top.<br/>
 		All Rights Reserved.<br/>
 		<?php echo CHtml::link('codebase',$this -> createUrl('/'))  ?>
 	</div><!-- footer -->
