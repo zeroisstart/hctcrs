@@ -27,7 +27,7 @@ class Soft_Type extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'Soft_Type';
+		return 'soft_type';
 	}
 
 	/**

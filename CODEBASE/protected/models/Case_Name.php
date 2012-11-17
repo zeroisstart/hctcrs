@@ -29,7 +29,7 @@ class Case_Name extends CActiveRecord {
      * @return string the associated database table name
      */
     public function tableName() {
-        return 'Case_Name';
+        return 'case_name';
     }
 
     /**
