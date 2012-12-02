@@ -95,5 +95,29 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'shenhongmings@gmail.com',
+
+
+		'allowFunction'=>array(
+			'base64_decode',
+			'base64_encode',
+			'md5',
+			'sha1',
+			
+			'decbin',
+			'decoct',
+			'dechex',
+			
+			'bindec',
+			'bindec',
+			'bin2hex',
+
+			'octdec',
+
+			'hexdec',
+
+			'date',
+
+			'time'
+			),
 	),
 );

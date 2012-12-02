@@ -85,3 +85,13 @@
 	color:#1BE0BF;
 }
  
+.submit_btn{
+	width: 50px;
+	height:30px;
+	padding-right:3px;
+}
+
+.submit_cnt{
+	width: 500px;
+}
+

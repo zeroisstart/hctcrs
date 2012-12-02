@@ -12,9 +12,7 @@ class EncryptionController extends Controller {
 	}
 	
 	/**
-	 * 
 	 */
-	
 	public function actionEnbase64() {
 		$content = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
 		
@@ -27,7 +25,6 @@ class EncryptionController extends Controller {
 	}
 	
 	/**
-	 * 
 	 */
 	public function actionDebase64() {
 		$content = isset ( $_POST ['text'] ) ? $_POST ['text'] : '';
@@ -36,7 +33,26 @@ class EncryptionController extends Controller {
 		
 		$this->render ( 'base64', array (
 				'code' => $content,
-				'base64' => $base64
+				'base64' => $base64 
+		) );
+	}
+	public function actionDec2hex() {
+	}
+	public function actionIndex() {
+		$code = isset ( $_POST ['code'] ) ? $code : '';
+		
+		$command = isset ( $_POST ['cmd'] ) ? $_POST ['cmd'] : '';
+		
+		if ($command && $code) {
+			$content = $command ( $code );
+		}
+		
+		$functions = Yii::app() -> params -> allowFunction;
+		
+		$this->render ( 'index', array (
+				'content' => $content,
+				'functions'=>$functions,
+				'code' => $code 
 		) );
 	}
 	
