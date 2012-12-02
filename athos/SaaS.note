@@ -1,9 +1,0 @@
-	收款：Chargify、Spreedly、Recurly、CheddarGetter。 
-　　客户支持在线聊天：LiveChat、olark、Zopim、LivePerson、SnapEngage。 
-　　制作表单，收集用户信息：Wufoo、Google Apps。 
-　　日志分析：Kissmetrics，mixpanel。
-	我记得当初投入了几个月的时间来丰富我们的分析基础架构，安装Thrift和Scribe，以得到最终一致的日志，还构建了一个Hadoop集群来分析我们的数据。……使用kissmetrics或是mixpanel，你只要在服务器端的代码或HTML中加入遗憾该代码，就可以分析网站上发生的任何事情了。
-
-	后期客户支持：ZenDesk，desk.com。
-	
-	产品数据分析：GoodData，RJ Metrics。
