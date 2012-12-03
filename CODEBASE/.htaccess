@@ -1,13 +1,4 @@
 RewriteEngine On
-
-#不带www的访问全部转到www
-#RewriteCond %{HTTP_HOST} ^xxx.com
-#RewriteRule (.*) http://www.xxx.com/$1 [R=301,L]
-
-#输入http://www.xxx.com/后显示cms系统的首页
-#RewriteRule ^$ /cms/index.php
-
-#yii-framework的伪静态
 RewriteCond %{REQUEST_FILENAME} !\.(js|ico|gif|jpg|png|css|js)$
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

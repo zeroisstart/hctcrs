@@ -227,3 +227,9 @@ div.search-form
 {
 	background: #80CFFF;
 }
+li{
+	list-style:none;
+}
+.clear_both{
+	clear:both;
+}

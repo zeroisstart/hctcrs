@@ -95,29 +95,37 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'shenhongmings@gmail.com',
-
-
+		
+//参数的传递
+		'args' => array('a','a+b','a+b+c','a+b+c+d'),
+		
 		'allowFunction'=>array(
+		
 			'base64_decode',
 			'base64_encode',
 			'md5',
 			'sha1',
 			
+//十进制转换			
 			'decbin',
 			'decoct',
 			'dechex',
-			
+//二进制转十进制			
 			'bindec',
 			'bindec',
 			'bin2hex',
-
+//八进制转十进制			
 			'octdec',
-
+//十六进制转十进制
 			'hexdec',
-
+//时间
 			'date',
-
-			'time'
+			'time',
+//正则匹配					
+			'preg_match',
+			'preg_match_all',
+			
+			
 			),
 	),
 );

@@ -95,3 +95,22 @@
 	width: 500px;
 }
 
+.args_btn {
+    padding:10px;height:20px;
+    border: 5px solid #dedede;
+    -moz-border-radius: 15px;      /* Gecko browsers */
+    -webkit-border-radius: 15px;   /* Webkit browsers */
+    border-radius:15px;            /* W3C syntax */
+}
+.functions_args{
+	width:100%;
+}
+.functions_args ul{
+	width:100%;
+}
+.functions_args ul li{
+	float:left;
+	margin-right:10px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
