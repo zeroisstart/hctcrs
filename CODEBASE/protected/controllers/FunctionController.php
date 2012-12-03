@@ -25,23 +25,32 @@ class FunctionController extends Controller {
 		$params ['func'] = Yii::app ()->params->allowFunction;
 		$params ['args'] = Yii::app ()->params->args;
 		
+		$request = Yii::app ()->request;
+		
+		$typeOfArgs = $request->getParam ( 'args' );
+		
+		if (! $typeOfArgs) {
+			$typeOfArgs = reset ( $params ['args'] );
+		}
+		
+		if (strpos ( $typeOfArgs, '+' )) {
+			$typeOfArgs = explode ( '+', $typeOfArgs );
+		} elseif (strpos ( $typeOfArgs, ' ' )) {
+			$typeOfArgs = explode ( ' ', $typeOfArgs );
+		}
+		
+		$params ['TypeOfArgs'] = ( array ) $typeOfArgs;
+		
+		foreach ( $params ['TypeOfArgs'] as $type ) {
+			$params ['argsValue'] [$type] = $request->getParam ( $type );
+		}
+		
+		$funcName = $request->getParam ( 'funcName' );
+		if ($funcName) {
+		}
+		
 		$this->render ( 'index', array (
 				'params' => $params 
-		) );
-	}
-	public function actionAjaxFunctionArea() {
-		$args = Yii::app ()->request->getParam ( 'args' );
-		if (empty ( $args )) {
-			$args = array (
-					'a' 
-			);
-		} else {
-			$args = explode ( '+', $args );
-		}
-		$param ['args'] = $args;
-		
-		$this->renderPartial ( 'ajaxFunctionArea', array (
-				'param' => $param 
 		) );
 	}
 }

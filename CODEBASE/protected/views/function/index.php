@@ -9,27 +9,35 @@ $this->breadcrumbs = array (
 <div class="functions_args">
 	<ul>
 		<?php foreach($params['args'] as $arg):?>
-			<li class="args_btn"><a href="javascript:void();"><?php echo $arg ?></a></li>
+			<li class="args_btn"><a href="<?php echo $this -> createUrl('function/index',array('args'=>$arg));?>"><?php echo $arg ?></a></li>
 		<?php endforeach;?>
 	</ul>
 </div>
 <hr style="margin:5 0 0;"></hr>
 
 <div class="clear_both"></div>
+<!-- 输出的内容 -->
+<div class="responseText">
 
-<div class="function_arg_area">
-	<div>
-		<textarea rows=10 cols=15>
-					
-		</textarea>
-	</div>
 </div>
 
+<?php echo CHtml::form('','post');?>
+
+<?php echo CHtml::hiddenField('parseText',implode('+',$params['TypeOfArgs']));?>
+
+<?php foreach ($params['TypeOfArgs'] as $types ):?>
+<div class="function_arg_area">
+	<div>
+		<textarea rows=10 cols=15 name="<?php echo $types?>"><?php echo $params['argsValue'][$types]?></textarea>
+	</div>
+</div>
+<?php endforeach;?>
 
 <div class="functions_names">
 	<ul>
 		<?php foreach($params['func'] as $func):?>
-			<li><a href="javascript:void();"><?php echo $func ?></a></li>
+			<li><a href="javascript:void(0);"><?php echo $func ?></a></li>
 		<?php endforeach;?>
 	</ul>
 </div>
+<?php echo CHtml::endForm();?>
