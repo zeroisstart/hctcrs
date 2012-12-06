@@ -14,26 +14,26 @@ $this->breadcrumbs = array (
 		<?php endforeach;?>
 	</ul>
 </div>
-<hr style="margin:5 0 0;"></hr>
+<hr style="margin-left:20px;margin: 5 0;width:70%"></hr>
 
 <div class="clear_both"></div>
 <!-- 输出的内容 -->
 <div class="responseText">
-	<p style="font-size:18px;color:#1BE0BF;"><?php echo $params['content'];?></p>
+	<p style="font-size: 18px; color: #1BE0BF;"><?php echo $params['content'];?></p>
 </div>
 
 <?php echo CHtml::form('','post');?>
 
 <?php echo CHtml::hiddenField('args',implode('+',$params['TypeOfArgs']));?>
-
+<div class="function_arg_block">
 <?php foreach ($params['TypeOfArgs'] as $types ):?>
 <div class="function_arg_area">
-	<div>
 		<textarea rows=10 cols=15 name="<?php echo $types?>"><?php echo $params['argsValue'][$types]?></textarea>
 	</div>
-</div>
 <?php endforeach;?>
-
+</div>
+<div class="clear_both"></div>
+<hr style="margin-left:20px;margin-top:30px;width:70%"></hr>
 <div class="functions_names">
 	<ul>
 		<?php foreach($params['func'] as $func):?>

@@ -18,7 +18,7 @@
 
 /* start soft_type */
 .soft_type_div {
-	
+
 }
 
 .soft_type_div a {
@@ -66,7 +66,7 @@
 }
 /* end search_bar */
 .tool_hard {
-	height:90px;
+	height: 90px;
 	text-align: center;
 }
 
@@ -74,43 +74,62 @@
 	width: 300px;
 }
 
-
-
-.tarea_code{
-	width:650px;
-	height:300px;
+.tarea_code {
+	width: 650px;
+	height: 300px;
 }
-.p_title{
-	font-size:20px;
-	color:#1BE0BF;
+.p_title {
+	font-size: 20px;
+	color: #1BE0BF;
 }
- 
-.submit_btn{
+
+.submit_btn {
 	width: 50px;
-	height:30px;
-	padding-right:3px;
+	height: 30px;
+	padding-right: 3px;
 }
 
-.submit_cnt{
+.submit_cnt {
 	width: 500px;
 }
 
 .args_btn {
-    padding:10px;height:20px;
-    border: 5px solid #dedede;
-    -moz-border-radius: 15px;      /* Gecko browsers */
-    -webkit-border-radius: 15px;   /* Webkit browsers */
-    border-radius:15px;            /* W3C syntax */
+	padding: 10px;
+	height: 20px;
+	border: 5px solid #dedede;
+	-moz-border-radius: 15px; /* Gecko browsers */
+	-webkit-border-radius: 15px; /* Webkit browsers */
+	border-radius: 15px; /* W3C syntax */
 }
-.functions_args{
-	width:100%;
+.functions_args {
+	width: 100%;
 }
-.functions_args ul{
-	width:100%;
+.functions_args ul {
+	width: 100%;
 }
-.functions_args ul li{
-	float:left;
-	margin-right:10px;
-	font:Arial, Helvetica, sans-serif;
-	font-size:20px;
+.functions_args ul li {
+	float: left;
+	margin-right: 10px;
+	font: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+.function_arg_block {
+	margin-left: 20px;
+}
+.function_arg_block div {
+	float: left;
+}
+
+.functions_names ul li {
+	float: left;
+	margin-right: 20px;
+	border: 0px solid #dedede;
+	text-align: center;
+	line-height:40px;
+	height:40px;
+}
+.functions_names ul li a {
+	font-size: 20px;
+	text-decoration: none;
+	width: 100%;
 }
