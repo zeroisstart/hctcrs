@@ -112,7 +112,6 @@ return array(
 			'dechex',
 //二进制转十进制			
 			'bindec',
-			'bindec',
 			'bin2hex',
 //八进制转十进制			
 			'octdec',

@@ -9,7 +9,8 @@ $this->breadcrumbs = array (
 <div class="functions_args">
 	<ul>
 		<?php foreach($params['args'] as $arg):?>
-			<li class="args_btn"><a href="<?php echo $this -> createUrl('function/index',array('args'=>$arg));?>"><?php echo $arg ?></a></li>
+			<?php #<?php echo $this -> createUrl('function/index',array('args'=>$arg));?>
+			<li class="args_btn"><a href="javascript:void(0);"><?php echo $arg ?></a></li>
 		<?php endforeach;?>
 	</ul>
 </div>
@@ -18,12 +19,12 @@ $this->breadcrumbs = array (
 <div class="clear_both"></div>
 <!-- 输出的内容 -->
 <div class="responseText">
-
+	<p style="font-size:18px;color:#1BE0BF;"><?php echo $params['content'];?></p>
 </div>
 
 <?php echo CHtml::form('','post');?>
 
-<?php echo CHtml::hiddenField('parseText',implode('+',$params['TypeOfArgs']));?>
+<?php echo CHtml::hiddenField('args',implode('+',$params['TypeOfArgs']));?>
 
 <?php foreach ($params['TypeOfArgs'] as $types ):?>
 <div class="function_arg_area">

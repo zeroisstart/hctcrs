@@ -4491,3 +4491,1454 @@ REQUEST_URI=/codebase/
 in /cde/www/hctcrs/CODEBASE/protected/views/layouts/main.php (12)
 in /cde/www/hctcrs/CODEBASE/protected/views/layouts/column1.php (5)
 in /cde/www/hctcrs/CODEBASE/protected/controllers/TopController.php (21)
+2012/12/03 10:28:43 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:35 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:36 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:36 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:48 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:49 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:49 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:54 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:30:55 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\htdocs\www\hctcrs\CODEBASE\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\htdocs\www\hctcrs\framework\web\CAssetManager.php:116
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('D:\htdocs\www\h...')
+#1 D:\htdocs\www\hctcrs\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(449): CAssetManager->publish('D:\htdocs\www\h...')
+#3 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(486): CClientScript->getCoreScriptUrl()
+#4 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(302): CClientScript->getPackageBaseUrl('jquery')
+#5 D:\htdocs\www\hctcrs\framework\web\CClientScript.php(195): CClientScript->renderCoreScripts()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(352): CClientScript->render('<!DOCTYPE html ...')
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(789): CController->processOutput('<!DOCTYPE html ...')
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\TopController.php(21): CController->render('index')
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): TopController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/
+---
+2012/12/03 10:31:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Case_Name))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Case_Name')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\CaseController.php(14): CActiveRecord->__construct('create')
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 10:31:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Case_Name))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Case_Name')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\CaseController.php(14): CActiveRecord->__construct('create')
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): CaseController->actionCaseName()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('CaseName')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case/CaseName')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Case/CaseName
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 10:31:12 [error] [php] Undefined variable: content (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\EncryptionController.php:53)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): EncryptionController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): EncryptionController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): EncryptionController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Encryption/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\EncryptionController.php (53)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 10:31:14 [error] [php] Undefined variable: content (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\EncryptionController.php:53)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): EncryptionController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): EncryptionController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): EncryptionController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Encryption/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\EncryptionController.php (53)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 10:31:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Soft_Resource))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Soft_Resource')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(9): CActiveRecord->__construct()
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionUpload()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Upload')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Upload')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Upload
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 10:31:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Soft_Type))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Soft_Type')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(21): CActiveRecord->__construct()
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 10:31:29 [error] [php] Undefined variable: convert_data (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:19)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (19)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:36:21 [error] [php] Undefined variable: convert_data (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:19)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (19)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:36:23 [error] [php] Undefined variable: convert_data (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:19)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (19)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:37:06 [error] [php] Undefined variable: convert_data (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:20)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (20)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:37:10 [error] [php] Undefined variable: char_code (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:22)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (22)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:37:11 [error] [php] Undefined variable: char_code (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:22)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (22)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:37:11 [error] [php] Undefined variable: char_code (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php:22)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): StringController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): StringController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): StringController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/String/CodingSelect
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\StringController.php (22)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 14:44:17 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.param" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\base\CModule.php(106): CComponent->__get('param')
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(8): CModule->__get('param')
+#2 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#3 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Index')
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Function/Index')
+#8 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#10 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 15:47:29 [error] [php] Indirect modification of overloaded property CAttributeCollection::$args has no effect (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php:6)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (6)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 15:48:03 [error] [php] Indirect modification of overloaded property CAttributeCollection::$allowFunction has no effect (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php:5)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (5)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 15:48:28 [error] [php] Invalid argument supplied for foreach() (D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php:31)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(11): FunctionController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (31)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (11)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 15:48:29 [error] [php] Invalid argument supplied for foreach() (D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php:31)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(11): FunctionController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (31)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (11)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 16:20:58 [error] [php] Missing argument 1 for Controller::GetScriptFiles(), called in D:\htdocs\www\hctcrs\framework\base\CComponent.php on line 112 and defined (D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php:88)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): FunctionController->GetScriptFile()
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): FunctionController->GetScriptFiles()
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require()
+#3 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): FunctionController->renderInternal()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#6 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(29): FunctionController->render()
+#7 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#8 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#11 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (88)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (75)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (90)
+2012/12/03 16:21:59 [error] [exception.CException] exception 'CException' with message 'FunctionController and its behaviors do not have a method or closure named "GetScriptFile".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): CComponent->__call('GetScriptFile', Array)
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): FunctionController->GetScriptFile('Index')
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): Controller->GetScriptFiles('Index')
+#3 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#4 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(29): CController->render('index', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Index')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Function/Index')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 16:22:00 [error] [exception.CException] exception 'CException' with message 'FunctionController and its behaviors do not have a method or closure named "GetScriptFile".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): CComponent->__call('GetScriptFile', Array)
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): FunctionController->GetScriptFile('Index')
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): Controller->GetScriptFiles('Index')
+#3 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#4 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(29): CController->render('index', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Index')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Function/Index')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 16:22:12 [error] [php] Missing argument 1 for Controller::GetScriptFiles(), called in D:\htdocs\www\hctcrs\framework\base\CComponent.php on line 112 and defined (D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php:88)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(90): FunctionController->GetJsFiles()
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): FunctionController->GetScriptFiles()
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require()
+#3 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): FunctionController->renderInternal()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#6 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(29): FunctionController->render()
+#7 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#8 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#11 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (88)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (75)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (90)
+2012/12/03 16:23:23 [error] [php] Missing argument 1 for Controller::GetScriptFiles(), called in D:\htdocs\www\hctcrs\framework\base\CComponent.php on line 112 and defined (D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php:95)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php(98): FunctionController->GetJsFiles()
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): FunctionController->GetScriptFiles()
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require()
+#3 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): FunctionController->renderInternal()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#6 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(29): FunctionController->render()
+#7 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#8 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#11 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (95)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (76)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\components\Controller.php (98)
+2012/12/03 16:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "tool/runPhpFunction.js"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('tool/runPhpFunc...')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/tool/runPhpFunction.js
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Function/Index
+---
+2012/12/03 16:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "tool/runPhpFunction.js"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('tool/runPhpFunc...')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/tool/runPhpFunction.js
+---
+2012/12/03 16:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "tool/runPhpFunction.js"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('tool/runPhpFunc...')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/tool/runPhpFunction.js
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Function/Index
+---
+2012/12/03 16:29:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "tool/runPhpFunction.js"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('tool/runPhpFunc...')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/tool/runPhpFunction.js
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Function/Index
+---
+2012/12/03 16:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "jquery"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('jquery')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/jquery
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Function/Index
+---
+2012/12/03 16:30:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "jquery"。' in D:\htdocs\www\hctcrs\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('jquery')
+#1 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#3 {main}
+REQUEST_URI=/hctcrs/CODEBASE/jquery
+---
+2012/12/03 16:31:08 [error] [php] Use of undefined constant js - assumed 'js' (D:\htdocs\www\hctcrs\CODEBASE\protected\widgets\System\ScriptFactory.php:44)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require()
+#1 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): FunctionController->renderInternal()
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#3 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#4 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(30): FunctionController->render()
+#5 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#8 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#9 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#10 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\widgets\System\ScriptFactory.php (44)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (7)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (30)
+2012/12/03 16:31:13 [error] [exception.CException] exception 'CException' with message 'ClientScript and its behaviors do not have a method or closure named "registerCoreFile".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\CODEBASE\protected\widgets\System\ScriptFactory.php(45): CComponent->__call('registerCoreFil...', Array)
+#1 D:\htdocs\www\hctcrs\CODEBASE\protected\widgets\System\ScriptFactory.php(45): ClientScript->registerCoreFile('jquery')
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(174): ScriptFactory->run()
+#3 D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php(7): CBaseController->widget('widgets.System....', Array)
+#4 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#5 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(30): CController->render('index', Array)
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Index')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Function/Index')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/03 18:25:27 [error] [php] Invalid argument supplied for foreach() (D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php:20)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(44): FunctionController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/function/index?args=a
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (20)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (44)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 18:25:42 [error] [php] Invalid argument supplied for foreach() (D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php:20)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(46): FunctionController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/function/index?args=a
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (20)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (46)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/03 18:48:28 [error] [php] Invalid argument supplied for foreach() (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php:44)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Function/Index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (44)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:04:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Soft_Resource))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Soft_Resource')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(9): CActiveRecord->__construct()
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionUpload()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Upload')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Upload')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Upload
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/06 15:04:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[42000] [1049] Unknown database 'codebase'' in D:\htdocs\www\hctcrs\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\htdocs\www\hctcrs\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\htdocs\www\hctcrs\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Soft_Type))
+#7 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Soft_Type')
+#8 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#9 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(21): CActiveRecord->__construct()
+#10 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#15 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#16 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#18 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/06 15:09:20 [error] [php] include(length,unique.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\htdocs\www\hctcrs\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(171): import()
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): createValidator()
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): Soft_Type->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): Soft_Type->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): Soft_Type->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): Soft_Type->setAttributes()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): Soft_Type->__set()
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): Soft_Type->__set()
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (24)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:10:22 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:10:22 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:10:23 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:10:23 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:10:24 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:10:25 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:11:55 [error] [php] include(length,unique.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\htdocs\www\hctcrs\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(171): import()
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): createValidator()
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): Soft_Type->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): Soft_Type->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): Soft_Type->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): Soft_Type->setAttributes()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): Soft_Type->__set()
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): Soft_Type->__set()
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (24)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:11:56 [error] [php] include(length,unique.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\htdocs\www\hctcrs\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(171): import()
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): createValidator()
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): Soft_Type->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): Soft_Type->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): Soft_Type->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): Soft_Type->setAttributes()
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): Soft_Type->__set()
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): Soft_Type->__set()
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (24)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:12:04 [error] [exception.CException] exception 'CException' with message '属性 "CStringValidator.0" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\validators\CValidator.php(174): CComponent->__set('0', 'unique')
+#1 D:\htdocs\www\hctcrs\framework\base\CModel.php(285): CValidator::createValidator('length', Object(Soft_Type), 'Type', Array)
+#2 D:\htdocs\www\hctcrs\framework\base\CModel.php(259): CModel->createValidators()
+#3 D:\htdocs\www\hctcrs\framework\base\CModel.php(544): CModel->getValidators()
+#4 D:\htdocs\www\hctcrs\framework\base\CModel.php(466): CModel->getSafeAttributeNames()
+#5 D:\htdocs\www\hctcrs\framework\base\CComponent.php(153): CModel->setAttributes(Array)
+#6 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attributes', Array)
+#7 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(24): CActiveRecord->__set('attributes', Array)
+#8 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#9 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#14 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#16 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:16:48 [error] [php] Trying to get property of non-object (D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php:35)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): ResourceController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): ResourceController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(36): ResourceController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php (35)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (36)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:17:20 [error] [php] Undefined variable: types (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php:36)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (36)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:18:10 [error] [exception.CException] exception 'CException' with message '属性 "CGridView.option" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWidgetFactory.php(162): CComponent->__set('option', Array)
+#1 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ResourceController), 'zii.widgets.gri...', Array)
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php(38): CBaseController->widget('zii.widgets.gri...', Array)
+#4 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#5 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('Type', Array, true)
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(35): CController->render('Type', Array)
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:18:13 [error] [exception.CException] exception 'CException' with message '属性 "CGridView.options" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CWidgetFactory.php(162): CComponent->__set('options', Array)
+#1 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ResourceController), 'zii.widgets.gri...', Array)
+#2 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php(38): CBaseController->widget('zii.widgets.gri...', Array)
+#4 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#5 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#7 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('Type', Array, true)
+#8 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(35): CController->render('Type', Array)
+#9 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#10 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#14 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#15 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#17 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:19:43 [error] [exception.CException] exception 'CException' with message '属性 "Soft_Type.delete" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(144): CComponent->__get('delete')
+#1 D:\htdocs\www\hctcrs\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('delete')
+#2 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CDataColumn.php(141): CHtml::value(Object(Soft_Type), 'delete')
+#3 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Soft_Type))
+#4 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(517): CGridColumn->renderDataCell(0)
+#5 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow(0)
+#6 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#7 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#11 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(174): CBaseListView->run()
+#12 D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php(38): CBaseController->widget('zii.widgets.gri...', Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#14 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#15 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#16 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('Type', Array, true)
+#17 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(35): CController->render('Type', Array)
+#18 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#19 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#23 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#24 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#26 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:19:44 [error] [exception.CException] exception 'CException' with message '属性 "Soft_Type.delete" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(144): CComponent->__get('delete')
+#1 D:\htdocs\www\hctcrs\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('delete')
+#2 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CDataColumn.php(141): CHtml::value(Object(Soft_Type), 'delete')
+#3 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Soft_Type))
+#4 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(517): CGridColumn->renderDataCell(0)
+#5 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow(0)
+#6 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#7 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#11 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(174): CBaseListView->run()
+#12 D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php(38): CBaseController->widget('zii.widgets.gri...', Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#14 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#15 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#16 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('Type', Array, true)
+#17 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(35): CController->render('Type', Array)
+#18 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#19 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#23 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#24 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#26 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:20:55 [error] [exception.CException] exception 'CException' with message '属性 "Soft_Type.delete" 未被定义.' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(144): CComponent->__get('delete')
+#1 D:\htdocs\www\hctcrs\framework\web\helpers\CHtml.php(1696): CActiveRecord->__get('delete')
+#2 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CDataColumn.php(141): CHtml::value(Object(Soft_Type), 'delete')
+#3 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Soft_Type))
+#4 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(517): CGridColumn->renderDataCell(0)
+#5 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow(0)
+#6 D:\htdocs\www\hctcrs\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#7 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 D:\htdocs\www\hctcrs\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#11 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(174): CBaseListView->run()
+#12 D:\htdocs\www\hctcrs\CODEBASE\protected\views\resource\Type.php(42): CBaseController->widget('zii.widgets.gri...', Array)
+#13 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(127): require('D:\htdocs\www\h...')
+#14 D:\htdocs\www\hctcrs\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\htdocs\www\h...', Array, true)
+#15 D:\htdocs\www\hctcrs\framework\web\CController.php(870): CBaseController->renderFile('D:\htdocs\www\h...', Array, true)
+#16 D:\htdocs\www\hctcrs\framework\web\CController.php(783): CController->renderPartial('Type', Array, true)
+#17 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php(35): CController->render('Type', Array)
+#18 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): ResourceController->actionType()
+#19 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('Type')
+#23 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/Type')
+#24 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#26 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "view" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('view')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('view')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/view')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/1
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:22:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "view" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('view')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('view')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/view')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/1
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/Resource/Type
+---
+2012/12/06 15:22:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "update" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('update')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/resource/Type
+---
+2012/12/06 15:22:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "delete" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('delete')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('delete')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/delete')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/delete/1?ajax=sms-grid
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/resource/Type
+---
+2012/12/06 15:24:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\htdocs\www\hctcrs\framework\web\CController.php:337
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update...')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1'
+---
+2012/12/06 15:24:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\htdocs\www\hctcrs\framework\web\CController.php:337
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update...')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1'
+---
+2012/12/06 15:25:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\htdocs\www\hctcrs\framework\web\CController.php:337
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update...')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1'
+---
+2012/12/06 15:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/
+---
+2012/12/06 15:25:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('index')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('index')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/index')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/index
+---
+2012/12/06 15:25:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "list" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('list')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('list')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/list')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/list
+---
+2012/12/06 15:28:03 [error] [exception.CException] exception 'CException' with message 'Soft_Type and its behaviors do not have a method or closure named "beforeControllerAction".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(226): CComponent->__call('beforeControlle...', Array)
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(264): CActiveRecord->__call('beforeControlle...', Array)
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(264): Soft_Type->beforeControllerAction(Object(ResourceController), Object(CInlineAction))
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1
+---
+2012/12/06 15:28:25 [error] [exception.CException] exception 'CException' with message 'Soft_Type and its behaviors do not have a method or closure named "beforeControllerAction".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(226): CComponent->__call('beforeControlle...', Array)
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(264): CActiveRecord->__call('beforeControlle...', Array)
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(264): Soft_Type->beforeControllerAction(Object(ResourceController), Object(CInlineAction))
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1
+---
+2012/12/06 15:28:28 [error] [exception.CException] exception 'CException' with message 'Soft_Type and its behaviors do not have a method or closure named "beforeControllerAction".' in D:\htdocs\www\hctcrs\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\db\ar\CActiveRecord.php(226): CComponent->__call('beforeControlle...', Array)
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(264): CActiveRecord->__call('beforeControlle...', Array)
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(264): Soft_Type->beforeControllerAction(Object(ResourceController), Object(CInlineAction))
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('update')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('resource/update')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1
+---
+2012/12/06 15:29:40 [error] [php] Missing argument 1 for ResourceController::getModel(), called in D:\htdocs\www\hctcrs\framework\base\CComponent.php on line 112 and defined (D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php:42)
+Stack trace:
+#0 unknown(0): ResourceController->actionUpdate()
+#1 D:\htdocs\www\hctcrs\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#2 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#3 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(287): ResourceController->runAction()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(266): ResourceController->runActionWithFilters()
+#6 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): ResourceController->run()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/resource/update/1
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (42)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\ResourceController.php (39)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)
+2012/12/06 15:41:19 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\htdocs\www\hctcrs\framework\web\CController.php:337
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 D:\htdocs\www\hctcrs\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('views')
+#4 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Resource/views')
+#5 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#7 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Resource/views
+HTTP_REFERER=http://localhost/hctcrs/CODEBASE/
+---
+2012/12/06 15:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Case/
+---
+2012/12/06 15:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Case/
+---
+2012/12/06 15:49:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in D:\htdocs\www\hctcrs\framework\web\CController.php:484
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(271): CController->missingAction('')
+#1 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): CController->run('')
+#2 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController('Case')
+#3 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CApplication->run()
+#5 {main}
+REQUEST_URI=/hctcrs/CODEBASE/Case/
+---
+2012/12/06 16:17:35 [error] [php] Undefined variable: param (D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php:22)
+Stack trace:
+#0 D:\htdocs\www\hctcrs\framework\web\CController.php(870): FunctionController->renderFile()
+#1 D:\htdocs\www\hctcrs\framework\web\CController.php(783): FunctionController->renderPartial()
+#2 D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php(59): FunctionController->render()
+#3 D:\htdocs\www\hctcrs\framework\web\actions\CInlineAction.php(50): FunctionController->actionIndex()
+#4 D:\htdocs\www\hctcrs\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\htdocs\www\hctcrs\framework\web\CController.php(287): FunctionController->runAction()
+#6 D:\htdocs\www\hctcrs\framework\web\CController.php(266): FunctionController->runActionWithFilters()
+#7 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(276): FunctionController->run()
+#8 D:\htdocs\www\hctcrs\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\htdocs\www\hctcrs\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\htdocs\www\hctcrs\CODEBASE\index.php(20): CWebApplication->run()
+REQUEST_URI=/hctcrs/CODEBASE/function/index
+in D:\htdocs\www\hctcrs\CODEBASE\protected\views\function\index.php (22)
+in D:\htdocs\www\hctcrs\CODEBASE\protected\controllers\FunctionController.php (59)
+in D:\htdocs\www\hctcrs\CODEBASE\index.php (20)

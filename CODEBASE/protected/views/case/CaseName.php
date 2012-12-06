@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array (
-        'E Nv'
+		'E Nv' 
 );
 
 ?>
@@ -12,6 +12,18 @@ $this->breadcrumbs = array (
 $dataProvider = new CActiveDataProvider ( 'Case_Name' );
 
 $this->widget ( 'zii.widgets.grid.CGridView', array (
-        'dataProvider' => $dataProvider
+		'dataProvider' => $dataProvider,
+		'columns' => array (
+				'ID',
+				'Name',
+				'Effect',
+				'Description',
+				'Allusion',
+				'Use',
+				'Dateline',
+				array (
+						'class' => 'CButtonColumn' 
+				) 
+		) 
 ) );
 ?>

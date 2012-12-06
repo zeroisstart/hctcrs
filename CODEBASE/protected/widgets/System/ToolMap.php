@@ -1,78 +1,83 @@
 <?php
 class ToolMap extends CWidget {
-    
-    /**
-     * ¿ØÖÆÆ÷Ä¿Â¼
-     *
-     * @var $_controllerPath
-     */
-    protected $_controllerPath = false;
-    
-    /**
-     * ¿ØÖÆÆ÷action ¼¯ºÏ
-     *
-     * @var $_controllerRoutes
-     */
-    protected $_controllerRoutes = array ();
-    
-    public function init() {
-        if (empty ( $this->_controllerRoutes )) {
-            $_app = Yii::app ();
-            // ÉèÖÃ¿ØÖÆÆ÷ÔÚµÄÄ¿Â¼
-            $this->_controllerPath = $_controllerPath = $_app->ControllerPath;
-            // ÎÄ¼þ¼Ð×é¼þ
-            $folder = Yii::app ()->Folder;
-            // ´ò¿ªÕâ¸öÎÄ¼þ¼Ð»ñÈ¡ËùÓÐ×ÊÔ´
-            $ary_folder = $folder->openFolder ( $_controllerPath, FOLDER::FOLDER_ONLY_FILE );
-            foreach ( $ary_folder as $_name ) {
-                $_controllerRoutes [str_replace ( 'Controller.php', '', $_name )] = $_name;
-            }
-            $rtn_ary = $this->_GetControllerActions ( $_controllerRoutes );
-            $this->_controllerRoutes = $rtn_ary;
-        }
-    }
-    
-    protected function _GetControllerActions(array $_routePath) {
-        $rtn_ary = array ();
-        foreach ( $_routePath as $_contrllerName => $_fileName ) {
-            $_className = str_ireplace ( '.php', '', $_fileName );
-            $_classFile = $this->_controllerPath . DIRECTORY_SEPARATOR . $_fileName;
-            if (! class_exists ( $_className, false ))
-                require ($_classFile);
-            $class = new $_className ( $_contrllerName );
-            $Relection = new ReflectionClass ( $class );
-            foreach ( $Relection->getMethods () as $method ) {
-                if (($_action = $this->_isAction ( $method->getName () ))) {
-                    $rtn_ary [$_contrllerName] [] = $_contrllerName . '/' . $_action;
-                }
-            }
-        }
-        return $rtn_ary;
-    }
-    
-    /**
-     * ÅÐ¶Ïµ±Ç°º¯ÊýÊÇ·ñÎªAction
-     *
-     * @param string $actionName
-     */
-    protected function _isAction($actionName) {
-        return preg_match ( '/^action*/', $actionName ) && $actionName != 'actions' ? substr ( $actionName, 6 ) : false;
-    }
-    
-    protected function _registerClient() {
-        $_css = array ();
-        $_js = array (
-                'js/tool/toolMap.js'
-        );
-        Yii::app ()->clientScript->registerCoreScript ( 'jquery' );
-        Yii::app ()->clientScript->_registerCSS ( $_css );
-        Yii::app ()->clientScript->_registerJS ( $_js );
-    }
-    
-    public function run() {
-        $this->_registerClient ();
-        $this->render ( 'views._widget.System.ToolMap', array (
-                'controllerRoutes' => ( array ) $this->_controllerRoutes
-        ) );
-    }
+	
+	/**
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
+	 *
+	 * @var $_controllerPath
+	 */
+	protected $_controllerPath = false;
+	
+	/**
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½action ï¿½ï¿½ï¿½ï¿½
+	 *
+	 * @var $_controllerRoutes
+	 */
+	protected $_controllerRoutes = array ();
+	public function init() {
+		if (empty ( $this->_controllerRoutes )) {
+			$_app = Yii::app ();
+			// ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Ä¿Â¼
+			$this->_controllerPath = $_controllerPath = $_app->ControllerPath;
+			// ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			$folder = Yii::app ()->Folder;
+			// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½Ð»ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´
+			$ary_folder = $folder->openFolder ( $_controllerPath, FOLDER::FOLDER_ONLY_FILE );
+			foreach ( $ary_folder as $_name ) {
+				$_controllerRoutes [str_replace ( 'Controller.php', '', $_name )] = $_name;
+			}
+			$rtn_ary = $this->_GetControllerActions ( $_controllerRoutes );
+			$this->_controllerRoutes = $rtn_ary;
+		}
+	}
+	protected function _GetControllerActions(array $_routePath) {
+		$rtn_ary = array ();
+		foreach ( $_routePath as $_contrllerName => $_fileName ) {
+			$_className = str_ireplace ( '.php', '', $_fileName );
+			$_classFile = $this->_controllerPath . DIRECTORY_SEPARATOR . $_fileName;
+			if (! class_exists ( $_className, false ))
+				require ($_classFile);
+			$class = new $_className ( $_contrllerName );
+			$Relection = new ReflectionClass ( $class );
+			foreach ( $Relection->getMethods () as $method ) {
+				if (($_action = $this->_isAction ( $method->getName () ))) {
+					$rtn_ary [$_contrllerName] [] = $_contrllerName . '/' . $_action;
+				}
+			}
+		}
+		return $rtn_ary;
+	}
+	
+	/**
+	 * ï¿½Ð¶Ïµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ÎªAction
+	 *
+	 * @param string $actionName        	
+	 */
+	protected function _isAction($actionName) {
+		$actionName = strtolower ( $actionName );
+		if (in_array ( $actionName, array (
+				'actionview',
+				'actionupdate',
+				'actiondelete' 
+		) )) {
+			return false;
+		}
+		
+		return preg_match ( '/^action*/', $actionName ) && $actionName != 'actions' ? substr ( $actionName, 6 ) : false;
+	}
+	protected function _registerClient() {
+		$_css = array ();
+		$_js = array (
+				'js/tool/toolMap.js' 
+		);
+		Yii::app ()->clientScript->registerCoreScript ( 'jquery' );
+		Yii::app ()->clientScript->_registerCSS ( $_css );
+		Yii::app ()->clientScript->_registerJS ( $_js );
+	}
+	public function run() {
+		$this->_registerClient ();
+		$this->render ( 'views._widget.System.ToolMap', array (
+				'controllerRoutes' => ( array ) $this->_controllerRoutes 
+		) );
+	}
 }

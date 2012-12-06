@@ -40,13 +40,31 @@ class FunctionController extends Controller {
 		}
 		
 		$params ['TypeOfArgs'] = ( array ) $typeOfArgs;
+		// ar_dump($params);
+		// ie;
 		
 		foreach ( $params ['TypeOfArgs'] as $type ) {
 			$params ['argsValue'] [$type] = $request->getParam ( $type );
 		}
 		
+		$params ['content'] = false;
+		
 		$funcName = $request->getParam ( 'funcName' );
+		
 		if ($funcName) {
+			switch (count ( $params ['argsValue'] )) {
+				case 1 :
+					$params ['content'] = eval ( 'return ' . $funcName . "('" . $params ['argsValue'] ['a'] . "');" );
+					break;
+				case 2 :
+				case 3 :
+				case 4 :
+					$pam = implode ( "','", $params ['argsValue'] );
+					$params ['content'] = eval ( 'return ' . $funcName . "('" . $pam . "');" );
+					break;
+				default :
+					break;
+			}
 		}
 		
 		$this->render ( 'index', array (
