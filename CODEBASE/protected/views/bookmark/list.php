@@ -1,17 +1,11 @@
-<?php
-$this->breadcrumbs = array (
-		'Book Mark' 
-);
-?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
+<?php $this -> renderPartial('_header');?>
 
-<div>
-	<?php $this -> renderPartial('_form',array('model'=>$model));?>
-</div>
+<p class="p_link">
+	<a href="<?php echo $this -> createUrl('bookmark/add');?>" target="_blank">add</a>
+</p>
 
 
-
-
+<?php $this -> renderPartial('_form',array('model'=>$model,'method'=>'GET'));?>
 
 <div class="grid_form">
 <?php

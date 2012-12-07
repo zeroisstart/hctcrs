@@ -43,11 +43,11 @@ class Bookmark extends CActiveRecord {
 						'Cate, Title, Time, Url',
 						'required' 
 				),
-				array (
+				/*array (
 						'Time',
 						'numerical',
 						'integerOnly' => true 
-				),
+				),*/
 				array (
 						'Cate, Title, Url',
 						'length',
@@ -113,9 +113,16 @@ class Bookmark extends CActiveRecord {
 		
 		return new CActiveDataProvider ( $this, array (
 				'pagination' => array (
-						'pageSize' => 20 
+						'pageSize' => 40 
 				),
 				'criteria' => $criteria 
 		) );
+	}
+	public function getBookMarkCate() {
+		$criteria = new CDbCriteria();
+		$criteria -> group ='Cate';
+		$criteria -> select = array('Cate');
+		$data = $this -> query($criteria,true);
+		return $data;
 	}
 }
