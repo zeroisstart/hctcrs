@@ -11,7 +11,7 @@ $this->breadcrumbs = array (
 <?php
 $dataProvider = new CActiveDataProvider ( 'Case_Name' );
 
-$this->widget ( 'zii.widgets.grid.CGridView', array (
+$this->widget ( 'components.widgets.GridView', array (
 		'dataProvider' => $dataProvider,
 		'columns' => array (
 				'ID',
@@ -22,7 +22,7 @@ $this->widget ( 'zii.widgets.grid.CGridView', array (
 				'Use',
 				'Dateline',
 				array (
-						'class' => 'CButtonColumn' 
+						'class' => 'components.widgets.ButtonColumn' 
 				) 
 		) 
 ) );
