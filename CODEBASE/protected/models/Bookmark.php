@@ -54,6 +54,10 @@ class Bookmark extends CActiveRecord {
 						'max' => 255 
 				),
 				array (
+						'Url',
+						'unique' 
+				),
+				array (
 						'Read',
 						'length',
 						'max' => 1 
@@ -119,10 +123,12 @@ class Bookmark extends CActiveRecord {
 		) );
 	}
 	public function getBookMarkCate() {
-		$criteria = new CDbCriteria();
-		$criteria -> group ='Cate';
-		$criteria -> select = array('Cate');
-		$data = $this -> query($criteria,true);
+		$criteria = new CDbCriteria ();
+		$criteria->group = 'Cate';
+		$criteria->select = array (
+				'Cate' 
+		);
+		$data = $this->query ( $criteria, true );
 		return $data;
 	}
 }

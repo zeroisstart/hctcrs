@@ -37,10 +37,15 @@ class BookmarkController extends Controller {
 	public function actionAdd() {
 		$request = Yii::app ()->request;
 		$model = new Bookmark ();
+		$bookMark = $request->getParam ( 'Bookmark' );
 		if (! empty ( $bookMark )) {
 			$model->attributes = $bookMark;
 			$model->Time = time ();
-			$model->validate () && $model->save () || $this->err404 ();
+			if ($model->validate ())
+				$model->save ();
+			else {
+				#var_dump ( $model->errors );
+			}
 		}
 		$this->render ( 'add', array (
 				'model' => $model 
