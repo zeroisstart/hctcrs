@@ -54,12 +54,12 @@ class FunctionController extends Controller {
 		if ($funcName) {
 			switch (count ( $params ['argsValue'] )) {
 				case 1 :
-					$params ['content'] = eval ( 'return ' . $funcName . "('" . $params ['argsValue'] ['a'] . "');" );
+					$params ['content'] = eval ( 'return ' . $funcName . '("' . $params ['argsValue'] ['a'] . '");' );
 					break;
 				case 2 :
 				case 3 :
 				case 4 :
-					$pam = implode ( "','", $params ['argsValue'] );
+					$pam = implode ( '","', $params ['argsValue'] );
 					$params ['content'] = eval ( 'return ' . $funcName . "('" . $pam . "');" );
 					break;
 				default :
