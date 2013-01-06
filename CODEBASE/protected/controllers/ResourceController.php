@@ -31,6 +31,13 @@ class ResourceController extends Controller {
 				'model' => $model 
 		) );
 	}
+	public function actionUrlFetch() {
+		// contnet = file_get_contents('http://www.yiban.cn/');
+		// reg_match_all('/<a href=\"(.*?)\">/', $contnet, $matches);
+		// ar_dump($matches);
+		// ie;
+		// this->render ( 'Type', array () );
+	}
 	public function actionView($id) {
 	}
 	public function actionDelete($id) {

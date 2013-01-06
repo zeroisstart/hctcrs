@@ -1,6 +1,6 @@
 $.fn.setFormParam = function(json, form, submit) {
 
-	var	_input = $('<input>').attr(json);
+	var _input = $('<input>').attr(json);
 	submit && form.append(_input).submit();
 
 };

@@ -1,6 +1,11 @@
 <?php
 class BookmarkController extends Controller {
 	public $defaultAction = 'list';
+	public $jsFiles = array (
+			'list' => array (
+					'js/tool/option.widget.js' 
+			) 
+	);
 	public function actionList($id = '') {
 		$model = new Bookmark ();
 		
@@ -44,7 +49,7 @@ class BookmarkController extends Controller {
 			if ($model->validate ())
 				$model->save ();
 			else {
-				#var_dump ( $model->errors );
+				// ar_dump ( $model->errors );
 			}
 		}
 		$this->render ( 'add', array (

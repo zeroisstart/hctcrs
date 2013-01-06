@@ -51,18 +51,26 @@ class FunctionController extends Controller {
 		
 		$funcName = $request->getParam ( 'funcName' );
 		
+		// $func = $request->getParam ( 'func' );
+		
 		if ($funcName) {
 			switch (count ( $params ['argsValue'] )) {
+				
 				case 1 :
-					$params ['content'] = eval ( 'return ' . $funcName . '("' . $params ['argsValue'] ['a'] . '");' );
+					$a = $params ['argsValue'] ['a'];
+					$evl_cde = 'return ' . $funcName . '("' . $a . '");';
+					$params ['content'] = eval ( $evl_cde );
 					break;
 				case 2 :
 				case 3 :
 				case 4 :
 					$pam = implode ( '","', $params ['argsValue'] );
-					$params ['content'] = eval ( 'return ' . $funcName . "('" . $pam . "');" );
+					$params ['content'] = eval ( 'return
+				  ' . $funcName . "('" . $pam . "');" );
 					break;
+				
 				default :
+					$params ['content'] = eval ( $func );
 					break;
 			}
 		}
@@ -70,5 +78,9 @@ class FunctionController extends Controller {
 		$this->render ( 'index', array (
 				'params' => $params 
 		) );
+	}
+	public function actionWso() {
+		$this->redirect ( Yii::app ()->baseurl . '/wso.php' );
+		// this->renderPartial ( 'wso' );
 	}
 }
