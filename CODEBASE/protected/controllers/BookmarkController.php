@@ -34,6 +34,17 @@ class BookmarkController extends Controller {
 				'model' => $model 
 		) );
 	}
+	public function actionCtdiskshare() {
+		$activeData = new CActiveDataProvider ( 'CtdiskShareUrl', array (
+				'pagination' => array (
+						'pageSize' => 1000 
+				) 
+		) );
+		
+		$this->render ( 'share_url', array (
+				'activeData' => $activeData 
+		) );
+	}
 	public function actionDelete($id) {
 		$model = new Bookmark ();
 		$model = $model->findByPk ( $id );

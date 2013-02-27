@@ -19,6 +19,31 @@ class TopController extends Controller {
 		$this->render ( 'index' );
 	}
 	
+	public function actionCatchShareUrl(){
+		//100000
+		$i = 1185833;
+		
+		set_time_limit(0);
+		
+		for($i;$i<=1200000;$i++){
+			$url = 'http://www.ctdisk.com/u/'.$i.'/';
+			if(! ($i % 5 )){
+				sleep(1);
+			}
+			$content = file_get_contents($url);
+			preg_match_all('/(\<a\shref\=\"\/u\/\d+\/\d+\"\>.*?\<\/a\>)/iU',$content,$all);
+			
+			if(isset($all[1])){
+				foreach($all[1] as $val){
+					$CtdiskShareUrl = new CtdiskShareUrl();
+					$CtdiskShareUrl -> ShareUrl = $val;
+					$CtdiskShareUrl -> save();
+				}
+			}
+		}
+		
+	}
+	
 	/**
 	 */
 	public function actionQRGenerate() {
