@@ -51,7 +51,7 @@
 .search_bar form .search_submit_button {
 	border: 1px solid #e7e7e7;
 	background: #F0F0F0 repeat-x;
-	padding-top: 5px;
+	/*padding-top: 5px;*/
 	width: 80px;
 	height: 30px;
 	font-size: 10pt;

@@ -21,7 +21,7 @@ class TopController extends Controller {
 	
 	public function actionCatchShareUrl(){
 		//100000
-		$i = 1185833;
+		/*$i = 1185833;
 		
 		set_time_limit(0);
 		
@@ -40,8 +40,13 @@ class TopController extends Controller {
 					$CtdiskShareUrl -> save();
 				}
 			}
-		}
+		}*/
 		
+	}
+	
+	public function actionExploits(){
+		
+		$this -> render('exploits');
 	}
 	
 	/**
