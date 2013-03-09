@@ -51,22 +51,31 @@ class FunctionController extends Controller {
 		
 		$funcName = $request->getParam ( 'funcName' );
 		
+// 		var_dump($funcName);
+// 		die;
+		
 		// $func = $request->getParam ( 'func' );
 		
 		if ($funcName) {
 			switch (count ( $params ['argsValue'] )) {
-				
 				case 1 :
 					$a = $params ['argsValue'] ['a'];
-					$evl_cde = 'return ' . $funcName . '("' . $a . '");';
-					$params ['content'] = eval ( $evl_cde );
+// 					$evl_cde = 'return ' . $funcName . '("' . $a . '");';
+// 					$params ['content'] = eval ( $evl_cde );
+					$params ['content'] = call_user_func_array($funcName, array($a));
 					break;
 				case 2 :
 				case 3 :
 				case 4 :
-					$pam = implode ( '","', $params ['argsValue'] );
-					$params ['content'] = eval ( 'return
-				  ' . $funcName . "('" . $pam . "');" );
+					
+					if(count($params['argsValue']) <2){
+						$this -> actionLoseParams();
+					}
+
+					$params ['content'] = call_user_func_array($funcName, $params ['argsValue']);
+// 					$pam = implode ( '","', $params ['argsValue'] );
+// 					$params ['content'] = eval ( 'return
+// 				  ' . $funcName . "('" . $pam . "');" );
 					break;
 				
 				default :
@@ -79,6 +88,11 @@ class FunctionController extends Controller {
 				'params' => $params 
 		) );
 	}
+	public function actionLoseParams(){
+		die('lose some params pls check it now!');
+	}
+	
+	
 	public function actionWso() {
 		$this->redirect ( Yii::app ()->baseurl . '/wso.php' );
 		// this->renderPartial ( 'wso' );

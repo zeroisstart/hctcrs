@@ -72,7 +72,7 @@ class Controller extends CController {
 	 * @return mixed
 	 */
 	public function GetJsFiles($actionID) {
-		$actionID = strtolower($actionID);
+		$actionID = strtolower ( $actionID );
 		return isset ( $this->jsFiles [$actionID] ) ? $this->jsFiles [$actionID] : array ();
 	}
 	
@@ -84,7 +84,7 @@ class Controller extends CController {
 	 * @return mixed
 	 */
 	public function GetCssFile($actionID) {
-		$actionID = strtolower($actionID);
+		$actionID = strtolower ( $actionID );
 		return isset ( $this->cssFiles [$actionID] ) ? $this->cssFiles [$actionID] : array ();
 	}
 	/**
@@ -93,11 +93,14 @@ class Controller extends CController {
 	 * @return multitype:Ambigous <mixed, multitype:>
 	 */
 	public function GetScriptFiles($actionID) {
-		$actionID = strtolower($actionID);
+		$actionID = strtolower ( $actionID );
 		return array (
 				'jsFiles' => $this->GetJsFiles ( $actionID ),
 				'cssFiles' => $this->GetCssFile ( $actionID ) 
 		);
 	}
-	
+	public function action404() {
+		$this->render ( '404' );
+		Yii::app ()->end ();
+	}
 }

@@ -2,7 +2,7 @@
 return array (
   'template' => 'default',
   'tablePrefix' => '',
-  'modelPath' => 'application.models',
+  'modelPath' => 'application.modules.Z.models',
   'baseClass' => 'CActiveRecord',
   'buildRelations' => '1',
 );

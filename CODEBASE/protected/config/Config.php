@@ -10,40 +10,40 @@ require 'BaseConfig.php';
 class Config {
     
     /**
-     * ¿ª·¢»·¾³
+     * å¼€å‘ç¯å¢ƒ
      *
      * @var string DEVELOP
      */
     Const DEVELOP = 'develop';
     /**
-     * ²âÊÔ¿ª·¢»·¾³
+     * æµ‹è¯•å¼€å‘ç¯å¢ƒ
      *
      * @var string TEST
      */
     Const TEST = 'test';
     /**
-     * Éú²ú»·¾³
+     * ç”Ÿäº§ç¯å¢ƒ
      *
      * @var string PRODUCT
      */
     Const PRODUCT = 'product';
     
     /**
-     * ×Ô¶¯¼ì²â¿ª·¢»·¾³
+     * è‡ªåŠ¨æ£€æµ‹å¼€å‘ç¯å¢ƒ
      *
      * @var integer AUTO
      */
     Const AUTO = 0;
     
     /**
-     * »·¾³±äÁ¿key
+     * ç¯å¢ƒå˜é‡key
      *
      * @var string ENVKEY
      */
     Const ENVKEY = 'AppStrategy';
     
     /**
-     * ¿ª·¢³¡¾°
+     * å¼€å‘åœºæ™¯
      *
      * @var string $appStrategy
      */
@@ -55,7 +55,7 @@ class Config {
     
     }
     /**
-     * »ñÈ¡¿ª·¢µÈ¼¶
+     * è·å–å¼€å‘ç­‰çº§
      *
      * @return string
      */
@@ -63,7 +63,7 @@ class Config {
         return getenv ( self::ENVKEY );
     }
     /**
-     * ÉèÖÃ¿ª·¢µÈ¼¶
+     * è®¾ç½®å¼€å‘ç­‰çº§
      *
      * @param string $level
      * @return boolean

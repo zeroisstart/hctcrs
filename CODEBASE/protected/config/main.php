@@ -1,4 +1,33 @@
 <?php
+$modules_includes = array ();
+$modules_dirs = scandir ( MODULES_PATH );
+
+foreach ( $modules_dirs as $module ) {
+	if ($module [0] == ".") {
+		continue;
+	}
+	
+	$modules [] = $module;
+	
+	$modules_includes [] = "application.modules.{$module}.*";
+	$modules_includes [] = "application.modules.{$module}.models.*";
+	$modules_includes [] = "application.modules.{$module}.portlets.*";
+	$modules_includes [] = "application.modules.{$module}.forms.*";
+	$modules_includes [] = "application.modules.{$module}.components.*";
+	$modules_includes [] = "application.modules.{$module}.components.zii.*";
+}
+
+$modules ['gii'] = array (
+		'class' => 'system.gii.GiiModule',
+		'generatorPaths' => array (
+				'application.gii' 
+		),
+		'password' => 'yii',
+		'ipFilters' => array (
+				'127.0.0.1',
+				'::1' 
+		) 
+);
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -7,8 +36,10 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
-        
+	'name'=>'Top\' CodeBase ',
+    'timeZone'=>'Asia/Shanghai', //设置时区为上海
+    'language'=>'zh_cn',
+
     'defaultController'=>'Top',
 
 	// preloading 'log' component
@@ -21,20 +52,12 @@ return array(
 	    'application.components.Helper.*',
 	),
     'aliases'=>array(
-      'components'=>'application.components',
-      'views'=>'application.views',
-      'widgets'=>'application.widgets'),
-
-	'modules'=>array(
-		// uncomment the following to enable the Gii tool
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'yii',
-		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-		),
-	),
-
+      'anne' =>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR,
+      'alice' =>dirname(__FILE__).DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR,
+      'components'=>'application.components', // 设置元件目录
+      'views'=>'application.views',           // 设置显示目录
+      'widgets'=>'application.widgets'),      // 设置小工具目录
+	'modules'=>$modules,
 	// application components
 	'components'=>array(
 		'user'=>array(
@@ -43,15 +66,16 @@ return array(
 		),
 		'Folder'=>array(
                 'class'=>'components.System.Folder'
-		        
+
 		),
 		'clientScript'=>array(
 		        'class'=>'components.System.ClientScript'
-		
+
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -60,7 +84,7 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=CODEBASE',
+			'connectionString' => 'mysql:host=localhost;dbname=CodeBase',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',
@@ -86,10 +110,42 @@ return array(
 		),
 	),
 
+
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'shenhongmings@gmail.com',
+		
+//参数的传递
+		'args' => array('a','a+b','a+b+c','a+b+c+d'),
+		
+		'allowFunction'=>array(
+		
+			'base64_decode',
+			'base64_encode',
+			'md5',
+			'sha1',
+			
+//十进制转换			
+			'decbin',
+			'decoct',
+			'dechex',
+//二进制转十进制			
+			'bindec',
+			'bin2hex',
+//八进制转十进制			
+			'octdec',
+//十六进制转十进制
+			'hexdec',
+//时间
+			'date',
+			'time',
+//正则匹配					
+			'preg_match',
+			'preg_match_all',
+			
+			
+			),
 	),
 );
