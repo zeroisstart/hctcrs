@@ -2,19 +2,19 @@
 class Folder extends CComponent {
     
     /**
-     * ╥╣╩ькЫспвйт╢
+     * Х©■Е⌡·Ф┴─Ф°┴Х╣└Ф╨░
      *
      * @var FOLDER_ALL
      */
     Const FOLDER_ALL = 0;
     /**
-     * ╥╣╩ькЫспнд╪Чвйт╢
+     * Х©■Е⌡·Ф┴─Ф°┴Ф√┤Д╩╤Х╣└Ф╨░
      *
      * @var FOLDER_ALL
      */
     Const FOLDER_ONLY_FILE = 1;
     /**
-     * ╥╣╩ькЫспнд╪Ч╪пвйт╢
+     * Х©■Е⌡·Ф┴─Ф°┴Ф√┤Д╩╤Е╓╧Х╣└Ф╨░
      *
      * @var FOLDER_ALL
      */
@@ -25,7 +25,7 @@ class Folder extends CComponent {
     }
     
     /**
-     * ╥╣╩ьнд╪Ч╪поб╣двйт╢
+     * Х©■Е⌡·Ф√┤Д╩╤Е╓╧Д╦▀Г └Х╣└Ф╨░
      *
      * @param string $folderPath
      */

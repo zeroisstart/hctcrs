@@ -5,10 +5,10 @@ return CMap::mergeArray(
         array(
         'components' => array(
             'db' => array(
-		        'connectionString' => 'mysql:host=localhost;dbname=yii_cms;',
+		        'connectionString' => 'mysql:host=localhost;dbname=CodeBase;',
 		        'emulatePrepare'   => true,
 		        'username'         => 'root',
-		        'password'         => '1',
+		        'password'         => '',
 		        'charset'          => 'utf8',
                 'schemaCachingDuration' => 86400,
 		        //'enableProfiling'  => true, 

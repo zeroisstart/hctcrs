@@ -27,8 +27,15 @@ class autoRegisterFile extends CWidget {
 	public $jquery = false;
 	
 	/**
+	 * 加载静态文件的base地址
+	 *
+	 * @var string
+	 */
+	public $baseUrl = false;
+	
+	/**
 	 * Yii::app() -> clientScript
-	 * 
+	 *
 	 * @var object
 	 */
 	private $_cs;
@@ -50,11 +57,41 @@ class autoRegisterFile extends CWidget {
 	 */
 	public function run() {
 		$cs = $this->_cs;
-		foreach ( $this->css as $cssFile ) {
-			$cs->registerCssFile ( Yii::app ()->baseUrl . DIRECTORY_SEPARATOR . $cssFile );
+		
+		$ary_pos = array (
+				'footer' => CClientScript::POS_END 
+		);
+		
+		foreach ( $ary_pos as $key => $val ) {
+			if (isset ( $_js [$key] )) {
+				$this->_registerScript ( $this->js [$key], $val );
+				unset ( $this->js [$key] );
+			}
 		}
-		foreach ( $this->js as $jsFile ) {
-			$cs->registerScriptFile ( Yii::app ()->baseUrl . DIRECTORY_SEPARATOR . $jsFile );
+		$this->_registerCss ( $this->css );
+		$this->_registerScript ( $this->js );
+	}
+	/**
+	 * 注册css文件
+	 *
+	 * @param array $cssFiles        	
+	 * @param int $pos        	
+	 */
+	public function _registerCss(array $cssFiles, $pos = CClientScript::POS_HEAD) {
+		$_baseUrl = $this->baseUrl ? $this->baseUrl : Yii::app ()->baseUrl;
+		foreach ( $cssFiles as $cssFile ) {
+			$this->_cs->registerCssFile ( $_baseUrl . '/' . $cssFile, $pos );
+		}
+	}
+	/**
+	 *
+	 * @param array $scriptFiles        	
+	 * @param int $pos        	
+	 */
+	function _registerScript(array $scriptFiles, $pos = CClientScript::POS_HEAD) {
+		$_baseUrl = $this->baseUrl ? $this->baseUrl : Yii::app ()->baseUrl;
+		foreach ( $scriptFiles as $jsFile ) {
+			$this->_cs->registerScriptFile ( $_baseUrl . '/' . $jsFile, $pos );
 		}
 	}
 }
