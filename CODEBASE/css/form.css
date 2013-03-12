@@ -158,3 +158,30 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+
+
+.blue_Btn{
+	float:right;
+	margin-right:10px;
+	padding:0px 10px;
+	height:36px;
+	line-height:36px;
+	border:1px solid #f0f0f0;
+	background:#28a;
+	color:#fff;
+	text-decoration:none;
+	box-shadow:1px 1px 5px #ddd;
+	border-radius:4px;
+}
+.blue_Btn:hover{
+	background:#268;
+	box-shadow:1px 1px 5px #aaa;
+}
+.form{
+	text-align:center;
+	width:100%;
+}
+
+.form_input{
+		font-size:25px;
+}

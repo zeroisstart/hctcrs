@@ -49,7 +49,7 @@ if ($dbs) {
 
 if ($tbls) {
 	$this->widget ( 'ext.select2.ESelect2', array (
-			'name' => 'table',
+			'name' => 'table', 
 			'data' => $tbls,
 			'value' => $table,
 			'events' => array (

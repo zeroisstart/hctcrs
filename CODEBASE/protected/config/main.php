@@ -20,7 +20,7 @@ foreach ( $modules_dirs as $module ) {
 $modules ['gii'] = array (
 		'class' => 'system.gii.GiiModule',
 		'generatorPaths' => array (
-				'application.gii' 
+				'ext.dwz.gii', 
 		),
 		'password' => 'yii',
 		'ipFilters' => array (
@@ -68,6 +68,7 @@ return array(
 	// application-level parameters that can be accessed
 	// using Yii::app()->params['paramName']
 	'params'=>array(
+		'phantomjs'=>'D:\htdocs\www\phantomjs-1.8.2-windows\phantomjs.exe D:\htdocs\www\phantomjs-1.8.2-windows\examples\rasterize.js',
 		// this is used in contact page
 		'adminEmail'=>'shenhongmings@gmail.com',
 		
@@ -98,8 +99,6 @@ return array(
 //正则匹配					
 			'preg_match',
 			'preg_match_all',
-			
-			
 			),
 	),
 );
