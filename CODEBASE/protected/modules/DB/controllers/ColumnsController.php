@@ -25,12 +25,16 @@ class ColumnsController extends Controller {
 	);
 	public $defaultAction = 'view';
 	
-	/**
-	 * 显示连接的数据库
-	 */
-	public function actionView() {
+	
+	public function actionTable(){
+		
+	}
+	
+	private function initDatabase(){
 		$req = Yii::app ()->request;
-
+		
+		$switch_db = Yii::app() -> switchDB;
+		
 		$connectionString = $req->getParam ( 'connectionString' );
 		$database = $req -> getParam('database');
 		$table = $req -> getParam('table');
@@ -47,15 +51,23 @@ class ColumnsController extends Controller {
 			$connectionParams['connectionString'] = str_replace('{dbname}', 'test', $connectionParams['connectionString']);
 		}
 		
-		foreach($connectionParams as $k=>$v){
-			$db -> $k = $v;
-		}
-		
-		$db -> setActive(false);
+		$switch_db -> swch($connectionParams);
+	}
+	
+	/**
+	 * 显示连接的数据库
+	 */
+	public function actionView() {
+		$req = Yii::app ()->request;
+
+		$connectionString = $req->getParam ( 'connectionString' );
+		$database = $req -> getParam('database');
+		$table = $req -> getParam('table');
+		$this -> initDatabase();
+		$db = Yii::app() -> db;
 		
 		$tbls = array ();
 		$dbs = array();
-
 
 		//数据库链接的切换
 		

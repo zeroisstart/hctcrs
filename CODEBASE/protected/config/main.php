@@ -1,4 +1,4 @@
-<?php
+ <?php
 $modules_includes = array ();
 $modules_dirs = scandir ( MODULES_PATH );
 
@@ -28,6 +28,9 @@ $modules ['gii'] = array (
 				'::1' 
 		) 
 );
+
+
+$components = require 'components.php';
 
 // uncomment the following to define a path alias
 // Yii::setPathOfAlias('local','path/to/local-folder');
@@ -59,56 +62,7 @@ return array(
       'widgets'=>'application.widgets'),      // 设置小工具目录
 	'modules'=>$modules,
 	// application components
-	'components'=>array(
-		'user'=>array(
-			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
-		),
-		'Folder'=>array(
-                'class'=>'components.System.Folder'
-
-		),
-		'clientScript'=>array(
-		        'class'=>'components.System.ClientScript'
-
-		),
-		// uncomment the following to enable URLs in path-format
-		'urlManager'=>array(
-			'urlFormat'=>'path',
-			'showScriptName'=>false,
-			'rules'=>array(
-				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
-				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
-				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			),
-		),
-		// uncomment the following to use a MySQL database
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=CodeBase',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
-		'errorHandler'=>array(
-            'errorAction'=>'Top/error',
-        ),
-		'log'=>array(
-			'class'=>'CLogRouter',
-			'routes'=>array(
-				array(
-					'class'=>'CFileLogRoute',
-					'levels'=>'error, warning',
-				),
-				// uncomment the following to show log messages on web pages
-				/*
-				array(
-					'class'=>'CWebLogRoute',
-				),
-				*/
-			),
-		),
-	),
+	'components'=>$components,
 
 
 	// application-level parameters that can be accessed

@@ -77,6 +77,7 @@ class ZLink extends CActiveRecord
 			'title' => 'Title',
 			'create_time' => 'Create Time',
 			'ext' => 'Ext',
+			'state'=>'State',
 		);
 	}
 

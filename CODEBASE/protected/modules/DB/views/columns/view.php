@@ -31,25 +31,30 @@ $this->widget ( 'ext.select2.ESelect2', array (
 		) 
 ) );
 
-if($dbs){
+if ($dbs) {
 	$this->widget ( 'ext.select2.ESelect2', array (
 			'name' => 'database',
 			'data' => $dbs,
-			'value'=>$database,
+			'value' => $database,
 			'events' => array (
-					'change' => 'js:function(_ele){console.log(_ele.target.value);$("form").submit()}'
-			)
+					'change' => 'js:function(_ele){
+							if($("#table")[0]){
+								$("#table").remove();
+							}
+							$("form").submit()
+					}' 
+			) 
 	) );
 }
 
-if($tbls){
+if ($tbls) {
 	$this->widget ( 'ext.select2.ESelect2', array (
 			'name' => 'table',
 			'data' => $tbls,
-			'value'=>$table,
+			'value' => $table,
 			'events' => array (
-					'change' => 'js:function(_ele){console.log(_ele.target.value);$("form").submit()}'
-			)
+					'change' => 'js:function(_ele){console.log(_ele.target.value);$("form").submit()}' 
+			) 
 	) );
 }
 
@@ -64,10 +69,11 @@ if($tbls){
 		<?php echo '`'.implode('`,`', $column['keys']).'`';?>
 	</div>
 	<div>
-<xmp>
-<?php 
-$column['keys'] = array_flip($column['keys']);
-var_export($column['keys']);?>
+		<xmp>
+<?php
+	$column ['keys'] = array_flip ( $column ['keys'] );
+	var_export ( $column ['keys'] );
+	?>
 </xmp>
 	</div>
 <?php endif;?>
