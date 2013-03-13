@@ -9,8 +9,8 @@ return array (
 				'class' => 'components.System.Folder' 
 		),
 		'clientScript' => array (
-				'class'=>'ext.dwz.DClientScript',
-				//'class' => 'components.System.ClientScript' 
+				//'class'=>'ext.dwz.DClientScript',
+				'class' => 'components.System.ClientScript' 
 		),
 		// uncomment the following to enable URLs in path-format
 		'urlManager' => array (
